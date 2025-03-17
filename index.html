@@ -1,0 +1,2988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AvarexNJ | Official Website - New Jersey Hip-Hop Artist</title>
+    <meta name="description" content="Official website of AvarexNJ, New Jersey's rising hip-hop artist. Stream 'Respect Tha Artist' and explore music, videos, and booking information.">
+    <meta name="keywords" content="AvarexNJ, New Jersey hip-hop, Respect Tha Artist, NJ rap, Ava Iverson album">
+    <meta name="author" content="AvarexNJ">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.avarexnj.com/">
+    <meta property="og:title" content="AvarexNJ | Official Website">
+    <meta property="og:description" content="New Jersey hip-hop artist AvarexNJ - stream music, watch videos, and book for events.">
+    <meta property="og:image" content="https://www.avarexnj.com/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.avarexnj.com/">
+    <meta property="twitter:title" content="AvarexNJ | Official Website">
+    <meta property="twitter:description" content="New Jersey hip-hop artist AvarexNJ - stream music, watch videos, and book for events.">
+    <meta property="twitter:image" content="https://www.avarexnj.com/assets/images/twitter-card.jpg">
+    
+    <!-- Preconnect to origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="assets/fonts/montserrat-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/images/avarexnj-logo.png" as="image">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured data for MusicGroup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "AvarexNJ",
+        "url": "https://www.avarexnj.com",
+        "image": "https://www.avarexnj.com/assets/images/avarexnj-press.jpg",
+        "description": "Hip-hop artist from New Jersey known for albums including 'Respect Tha Artist' and 'Ava Iverson'",
+        "genre": ["Hip Hop", "Rap"],
+        "member": {
+            "@type": "Person",
+            "name": "AvarexNJ"
+        },
+        "album": [
+            {
+                "@type": "MusicAlbum",
+                "name": "Ava Iverson",
+                "datePublished": "2024"
+            },
+            {
+                "@type": "MusicAlbum",
+                "name": "Respect Tha Artist",
+                "datePublished": "2023"
+            },
+            {
+                "@type": "MusicAlbum",
+                "name": "BossMan Time",
+                "datePublished": "2023"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- CSS Styling -->
+    <style>
+        /* CSS Reset/Normalize */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Base Variables */
+        :root {
+            /* Colors */
+            --color-primary: #000000;
+            --color-secondary: #333333;
+            --color-text: #333333;
+            --color-text-light: #999999;
+            --color-accent: #d92122;
+            --color-gray-dark: #333333;
+            --color-gray-medium: #666666;
+            --color-gray-light: #999999;
+            --color-background: #ffffff;
+            --color-card: #f9f9f9;
+            
+            /* Typography */
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+            --font-size-base: 16px;
+            --line-height-base: 1.5;
+            
+            /* Spacing */
+            --spacing-unit: 8px;
+            --spacing-small: calc(var(--spacing-unit) * 1);
+            --spacing-medium: calc(var(--spacing-unit) * 2);
+            --spacing-large: calc(var(--spacing-unit) * 4);
+            --spacing-xlarge: calc(var(--spacing-unit) * 8);
+            
+            /* Breakpoints */
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            
+            /* Container widths */
+            --container-max-width: 1200px;
+            --container-padding: var(--spacing-medium);
+            
+            /* Other */
+            --border-radius: 4px;
+            --transition-base: all 0.3s ease;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Typography base styles */
+        body {
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+            color: var(--color-text);
+            background-color: var(--color-background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            margin-top: 0;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-large);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+        
+        a:hover, a:focus {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Utility classes */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: var(--container-max-width);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+        }
+        
+        .section {
+            padding: var(--spacing-xlarge) 0;
+        }
+        
+        .section-heading {
+            text-align: center;
+            margin-bottom: var(--spacing-xlarge);
+            position: relative;
+            padding-bottom: var(--spacing-medium);
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-accent);
+        }
+        
+        /* Button styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition-base);
+            white-space: nowrap;
+        }
+        
+        .btn:hover, .btn:focus {
+            background-color: var(--color-accent);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .btn-primary {
+            background-color: var(--color-primary);
+        }
+        
+        .btn-accent {
+            background-color: var(--color-accent);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+        
+        .btn-outline:hover, .btn-outline:focus {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        
+        /* Header styles */
+        .site-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--color-primary);
+            color: white;
+            z-index: 100;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-medium) var(--container-padding);
+        }
+        
+        .logo-container {
+            flex-shrink: 0;
+        }
+        
+        .logo-container img {
+            max-height: 60px;
+            width: auto;
+        }
+        
+        .main-navigation {
+            display: none;
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-large);
+        }
+        
+        .nav-link {
+            font-family: var(--font-primary);
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-accent);
+            transition: var(--transition-base);
+        }
+        
+        .nav-link:hover::after, 
+        .nav-link:focus::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 10;
+        }
+        
+        .icon-bar {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            border-radius: 3px;
+            transition: var(--transition-base);
+        }
+        
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-accent);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Hero section */
+        .hero-section {
+            position: relative;
+            height: 90vh;
+            min-height: 500px;
+            background-color: var(--color-primary);
+            background-image: url('assets/images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-large);
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: var(--spacing-medium);
+            text-transform: uppercase;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-large);
+            font-weight: 500;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-medium);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Latest release section */
+        .latest-release {
+            padding: var(--spacing-xlarge) 0;
+            background-color: var(--color-card);
+        }
+        
+        .release-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .release-artwork {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: var(--spacing-large);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition-base);
+            position: relative;
+        }
+        
+        .release-artwork:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .explicit-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 0.8rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        
+        .release-info {
+            max-width: 600px;
+        }
+        
+        .release-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .release-year {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .release-description {
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .streaming-buttons {
+            display: flex;
+            gap: var(--spacing-medium);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-large);
+        }
+        
+        .streaming-button {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            transition: var(--transition-base);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .streaming-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .streaming-button img {
+            height: 24px;
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        /* News section */
+        .news-section {
+            background-color: white;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-large);
+        }
+        
+        .news-card {
+            background-color: var(--color-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition-base);
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .news-content {
+            padding: var(--spacing-medium);
+        }
+        
+        .news-date {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .news-title {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .news-excerpt {
+            margin-bottom: var(--spacing-medium);
+            font-size: 0.95rem;
+        }
+        
+        /* Newsletter */
+        .newsletter-container {
+            background-color: var(--color-primary);
+            color: white;
+            padding: var(--spacing-xlarge) var(--container-padding);
+            text-align: center;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: var(--spacing-large) auto 0;
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+        }
+        
+        .consent-group {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-small);
+            text-align: left;
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .consent-group input {
+            width: auto;
+        }
+        
+        .consent-group label {
+            font-size: 0.9rem;
+        }
+        
+        .subscribe-button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--color-accent);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .subscribe-button:hover, .subscribe-button:focus {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+        }
+        
+        .privacy-notice {
+            font-size: 0.8rem;
+            margin-top: var(--spacing-medium);
+        }
+        
+        /* Media queries for responsive design */
+        @media (min-width: 576px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+            
+            .main-navigation {
+                display: block;
+            }
+            
+            .release-container {
+                flex-direction: row;
+                text-align: left;
+                gap: var(--spacing-xlarge);
+            }
+            
+            .release-artwork {
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+            
+            .streaming-buttons {
+                justify-content: flex-start;
+            }
+            
+            .hero-title {
+                font-size: 4rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .news-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            :root {
+                --font-size-base: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip navigation for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with navigation -->
+    <header class="site-header" aria-label="Site header and primary navigation">
+        <div class="header-container container">
+            <!-- Logo container with alt text -->
+            <div class="logo-container">
+                <a href="index.html" aria-label="AvarexNJ homepage">
+                    <img src="assets/images/avarexnj-logo.png" alt="AvarexNJ Logo showing NJ RAP ARTIST text with airplane emblem" width="250" height="80">
+                </a>
+            </div>
+            
+            <!-- Navigation with ARIA support -->
+            <nav class="main-navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#music" class="nav-link">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#videos" class="nav-link">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#connect" class="nav-link">Connect</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main content -->
+    <main id="main-content" tabindex="-1">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1 class="hero-title">AvarexNJ</h1>
+                <p class="hero-subtitle">New Jersey's rising hip-hop artist bringing authentic sounds and powerful lyrics</p>
+                <div class="hero-buttons">
+                    <a href="#music" class="btn btn-accent">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                        <span class="btn-text">Listen Now</span>
+                    </a>
+                    <a href="#connect" class="btn btn-outline">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span class="btn-text">Book & Connect</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Latest Release Section -->
+        <section class="latest-release">
+            <div class="container">
+                <h2 class="section-heading">Latest Release</h2>
+                
+                <div class="release-container">
+                    <div class="release-artwork">
+                        <img src="assets/albums/ava-iverson-2024.jpg" alt="Ava Iverson album cover featuring AvarexNJ with basketball on red background" width="300" height="300">
+                        <span class="explicit-label" aria-label="Explicit content">E</span>
+                    </div>
+                    
+                    <div class="release-info">
+                        <h3 class="release-title">Ava Iverson</h3>
+                        <p class="release-year">2024</p>
+                        <p class="release-description">
+                            The latest album from AvarexNJ showcases his evolution as an artist with dynamic beats and thought-provoking lyrics. "Ava Iverson" delivers an authentic experience that connects with listeners through raw emotion and skilled delivery, firmly establishing AvarexNJ's place in the hip-hop landscape.
+                        </p>
+                        
+                        <audio controls class="audio-player">
+                            <source src="assets/audio/ava-iverson-preview.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        
+                        <div class="streaming-buttons">
+                            <a href="https://music.apple.com/artist/avarexnj" class="streaming-button" target="_blank" rel="noopener">
+                                <img src="assets/icons/apple-music.png" alt="Apple Music" width="24" height="24">
+                                <span>Apple Music</span>
+                            </a>
+                            <a href="https://open.spotify.com/artist/avarexnj" class="streaming-button" target="_blank" rel="noopener">
+                                <img src="assets/icons/spotify.png" alt="Spotify" width="24" height="24">
+                                <span>Spotify</span>
+                            </a>
+                            <a href="https://music.youtube.com/artist/avarexnj" class="streaming-button" target="_blank" rel="noopener">
+                                <img src="assets/icons/youtube-music.png" alt="YouTube Music" width="24" height="24">
+                                <span>YouTube Music</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- News & Updates Section -->
+        <section class="news-section section">
+            <div class="container">
+                <h2 class="section-heading">News & Updates</h2>
+                
+                <div class="news-grid">
+                    <!-- News Item 1 -->
+                    <article class="news-card">
+                        <img src="assets/news/performance-march-2025.jpg" alt="AvarexNJ performing at Newark venue" class="news-image">
+                        <div class="news-content">
+                            <time datetime="2025-03-15" class="news-date">March 15, 2025</time>
+                            <h3 class="news-title">Upcoming Newark Performance</h3>
+                            <p class="news-excerpt">Join AvarexNJ for a special hometown performance celebrating the success of "Ava Iverson" album.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- News Item 2 -->
+                    <article class="news-card">
+                        <img src="assets/news/album-release-2024.jpg" alt="Ava Iverson album release party" class="news-image">
+                        <div class="news-content">
+                            <time datetime="2025-02-10" class="news-date">February 10, 2025</time>
+                            <h3 class="news-title">Album Release Success</h3>
+                            <p class="news-excerpt">"Ava Iverson" reaches streaming milestone with over 100,000 plays in its first month across platforms.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- News Item 3 -->
+                    <article class="news-card">
+                        <img src="assets/news/interview-2025.jpg" alt="AvarexNJ during radio interview" class="news-image">
+                        <div class="news-content">
+                            <time datetime="2025-01-25" class="news-date">January 25, 2025</time>
+                            <h3 class="news-title">Hot 97 Interview</h3>
+                            <p class="news-excerpt">Listen to AvarexNJ's interview discussing his journey and the inspiration behind the new album.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Signup -->
+        <div class="newsletter-container">
+            <h3 id="newsletter-heading">Stay Updated</h3>
+            <p class="newsletter-description">Subscribe to receive updates on new releases, upcoming shows, and exclusive content.</p>
+            
+            <form class="newsletter-form" action="/subscribe" method="POST" aria-labelledby="newsletter-heading" novalidate>
+                <div class="form-group">
+                    <label for="newsletter-email" class="sr-only">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="newsletter-email" 
+                        name="email" 
+                        placeholder="Your email address" 
+                        required 
+                        aria-required="true"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    >
+                    <span class="form-error" aria-live="polite"></span>
+                </div>
+                
+                <div class="form-group consent-group">
+                    <input type="checkbox" id="newsletter-consent" name="consent" required aria-required="true">
+                    <label for="newsletter-consent">I agree to receive emails about AvarexNJ music and events</label>
+                </div>
+                
+                <button type="submit" class="subscribe-button">
+                    Subscribe <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+            
+            <p class="privacy-notice">Your information will never be shared with third parties. See our <a href="/privacy">Privacy Policy</a>.</p>
+        </div>
+        <!-- Music Section -->
+        <section id="music" class="music-section section">
+            <div class="container">
+                <h2 class="section-heading">Albums</h2>
+                
+                <div class="albums-container">
+                    <!-- Album 1: Ava Iverson (2024) -->
+                    <article class="album-item">
+                        <div class="album-artwork">
+                            <img src="assets/albums/ava-iverson-2024.jpg" alt="Ava Iverson album cover featuring AvarexNJ with basketball on red background" width="300" height="300">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                        </div>
+                        <div class="album-info">
+                            <h3 class="album-title">Ava Iverson</h3>
+                            <p class="album-year">2024</p>
+                            <div class="album-actions">
+                                <button class="play-album" aria-label="Play Ava Iverson album">
+                                    <span class="icon-play"><i class="fas fa-play"></i></span> Play
+                                </button>
+                                <div class="streaming-options">
+                                    <a href="https://music.apple.com/album/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/album/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://music.youtube.com/album/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Album 2: Respect Tha Artist (2023) -->
+                    <article class="album-item">
+                        <div class="album-artwork">
+                            <img src="assets/albums/respect-tha-artist-2023.jpg" alt="Respect Tha Artist album cover featuring AvarexNJ sitting beside colorful graffiti wall" width="300" height="300">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                        </div>
+                        <div class="album-info">
+                            <h3 class="album-title">Respect Tha Artist</h3>
+                            <p class="album-year">2023</p>
+                            <div class="album-actions">
+                                <button class="play-album" aria-label="Play Respect Tha Artist album">
+                                    <span class="icon-play"><i class="fas fa-play"></i></span> Play
+                                </button>
+                                <div class="streaming-options">
+                                    <a href="https://music.apple.com/album/respect-tha-artist" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/album/respect-tha-artist" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://music.youtube.com/album/respect-tha-artist" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Album 3: BossMan Time (2023) -->
+                    <article class="album-item">
+                        <div class="album-artwork">
+                            <img src="assets/albums/bossman-time-2023.jpg" alt="BossMan Time album cover featuring AvarexNJ in formal attire with pool table" width="300" height="300">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                        </div>
+                        <div class="album-info">
+                            <h3 class="album-title">BossMan Time</h3>
+                            <p class="album-year">2023</p>
+                            <div class="album-actions">
+                                <button class="play-album" aria-label="Play BossMan Time album">
+                                    <span class="icon-play"><i class="fas fa-play"></i></span> Play
+                                </button>
+                                <div class="streaming-options">
+                                    <a href="https://music.apple.com/album/bossman-time" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/album/bossman-time" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://music.youtube.com/album/bossman-time" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Album 4: Future Millionaire (2022) -->
+                    <article class="album-item">
+                        <div class="album-artwork">
+                            <img src="assets/albums/future-millionaire-2022.jpg" alt="Future Millionaire album cover" width="300" height="300">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                        </div>
+                        <div class="album-info">
+                            <h3 class="album-title">Future Millionaire</h3>
+                            <p class="album-year">2022</p>
+                            <div class="album-actions">
+                                <button class="play-album" aria-label="Play Future Millionaire album">
+                                    <span class="icon-play"><i class="fas fa-play"></i></span> Play
+                                </button>
+                                <div class="streaming-options">
+                                    <a href="https://music.apple.com/album/future-millionaire" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/album/future-millionaire" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://music.youtube.com/album/future-millionaire" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Album 5: Student 2 The Game (2021) -->
+                    <article class="album-item">
+                        <div class="album-artwork">
+                            <img src="assets/albums/student-2-the-game-2021.jpg" alt="Student 2 The Game album cover" width="300" height="300">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                        </div>
+                        <div class="album-info">
+                            <h3 class="album-title">Student 2 The Game</h3>
+                            <p class="album-year">2021</p>
+                            <div class="album-actions">
+                                <button class="play-album" aria-label="Play Student 2 The Game album">
+                                    <span class="icon-play"><i class="fas fa-play"></i></span> Play
+                                </button>
+                                <div class="streaming-options">
+                                    <a href="https://music.apple.com/album/student-2-the-game" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/album/student-2-the-game" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://music.youtube.com/album/student-2-the-game" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Tracklist component for the active album -->
+                <div class="tracklist-container" id="active-tracklist">
+                    <h3 class="tracklist-heading">Ava Iverson - Tracklist</h3>
+                    <ul class="tracklist">
+                        <li class="track-item">
+                            <button class="track-play-button" aria-label="Play track Air Jordan">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="track-info">
+                                <span class="track-number">1</span>
+                                <span class="track-title">Air Jordan</span>
+                                <span class="track-duration">3:42</span>
+                                <span class="explicit-marker" aria-label="Explicit">E</span>
+                            </div>
+                        </li>
+                        <li class="track-item">
+                            <button class="track-play-button" aria-label="Play track MVP Flow">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="track-info">
+                                <span class="track-number">2</span>
+                                <span class="track-title">MVP Flow</span>
+                                <span class="track-duration">3:18</span>
+                                <span class="explicit-marker" aria-label="Explicit">E</span>
+                            </div>
+                        </li>
+                        <li class="track-item">
+                            <button class="track-play-button" aria-label="Play track Philly vs Jersey">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="track-info">
+                                <span class="track-number">3</span>
+                                <span class="track-title">Philly vs Jersey</span>
+                                <span class="track-duration">4:05</span>
+                                <span class="explicit-marker" aria-label="Explicit">E</span>
+                            </div>
+                        </li>
+                        <li class="track-item">
+                            <button class="track-play-button" aria-label="Play track Triple Double">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="track-info">
+                                <span class="track-number">4</span>
+                                <span class="track-title">Triple Double</span>
+                                <span class="track-duration">3:52</span>
+                                <span class="explicit-marker" aria-label="Explicit">E</span>
+                            </div>
+                        </li>
+                        <li class="track-item">
+                            <button class="track-play-button" aria-label="Play track Garden State Legend">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="track-info">
+                                <span class="track-number">5</span>
+                                <span class="track-title">Garden State Legend</span>
+                                <span class="track-duration">4:21</span>
+                                <span class="explicit-marker" aria-label="Explicit">E</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Singles Section -->
+            <div class="container">
+                <h2 class="section-heading">Singles</h2>
+                
+                <div class="singles-grid">
+                    <!-- Single 1 -->
+                    <article class="single-item">
+                        <div class="single-artwork">
+                            <img src="assets/singles/ava-iverson-single.jpg" alt="Ava Iverson single cover art" width="200" height="200">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                            <button class="play-button" aria-label="Play Ava Iverson single">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="single-info">
+                            <h4 class="single-title">Ava Iverson</h4>
+                            <p class="single-year">2024</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Single 2 -->
+                    <article class="single-item">
+                        <div class="single-artwork">
+                            <img src="assets/singles/vibe-not-right.jpg" alt="Vibe Not Right single cover art" width="200" height="200">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                            <button class="play-button" aria-label="Play Vibe Not Right single">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="single-info">
+                            <h4 class="single-title">Vibe Not Right</h4>
+                            <p class="single-year">2023</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Single 3 -->
+                    <article class="single-item">
+                        <div class="single-artwork">
+                            <img src="assets/singles/just-watch-him.jpg" alt="Just Watch Him single cover art" width="200" height="200">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                            <button class="play-button" aria-label="Play Just Watch Him single">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="single-info">
+                            <h4 class="single-title">Just Watch Him</h4>
+                            <p class="single-year">2023</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Single 4 -->
+                    <article class="single-item">
+                        <div class="single-artwork">
+                            <img src="assets/singles/respect-tha-artist-single.jpg" alt="Respect Tha Artist single cover art" width="200" height="200">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                            <button class="play-button" aria-label="Play Respect Tha Artist single">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="single-info">
+                            <h4 class="single-title">Respect Tha Artist</h4>
+                            <p class="single-year">2023</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Single 5 -->
+                    <article class="single-item">
+                        <div class="single-artwork">
+                            <img src="assets/singles/just-listennn.jpg" alt="Just Listennn single cover art" width="200" height="200">
+                            <span class="explicit-label" aria-label="Explicit content">E</span>
+                            <button class="play-button" aria-label="Play Just Listennn single">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="single-info">
+                            <h4 class="single-title">Just Listennn</h4>
+                            <p class="single-year">2022</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Streaming Platforms -->
+                <div class="streaming-platforms">
+                    <h3 class="streaming-heading">Listen on Your Preferred Platform</h3>
+                    <div class="platform-buttons">
+                        <a href="https://music.apple.com/artist/avarexnj" class="platform-button" target="_blank" rel="noopener">
+                            <img src="assets/icons/apple-music-large.png" alt="Apple Music" width="120" height="40">
+                        </a>
+                        <a href="https://open.spotify.com/artist/avarexnj" class="platform-button" target="_blank" rel="noopener">
+                            <img src="assets/icons/spotify-large.png" alt="Spotify" width="120" height="40">
+                        </a>
+                        <a href="https://music.youtube.com/artist/avarexnj" class="platform-button" target="_blank" rel="noopener">
+                            <img src="assets/icons/youtube-music-large.png" alt="YouTube Music" width="120" height="40">
+                        </a>
+                        <a href="https://soundcloud.com/avarexnj" class="platform-button" target="_blank" rel="noopener">
+                            <img src="assets/icons/soundcloud-large.png" alt="SoundCloud" width="120" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- YouTube Content Section -->
+        <section id="videos" class="videos-section section">
+            <div class="container">
+                <h2 id="videos-heading" class="section-heading">AvarexTV</h2>
+                
+                <div class="featured-video">
+                    <!-- Featured video embed with loading optimizations -->
+                    <div class="video-container" data-video-id="FEATURED_VIDEO_ID">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/featured-thumbnail.jpg" alt="Featured video thumbnail" loading="lazy" width="640" height="360">
+                            <button class="play-button" aria-label="Play featured video">
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Respect Tha Artist - Official Music Video</h3>
+                            <p class="video-description">The official music video for "Respect Tha Artist" showcasing AvarexNJ's New Jersey roots and authentic style.</p>
+                            <p class="video-meta">
+                                <span class="views">25.7K views</span>
+                                <span class="upload-date">February 12, 2023</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-categories">
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All Videos</button>
+                        <button class="category-tab" data-category="music-videos">Music Videos</button>
+                        <button class="category-tab" data-category="interviews">Interviews</button>
+                        <button class="category-tab" data-category="behind-scenes">Behind The Scenes</button>
+                        <button class="category-tab" data-category="freestyles">Freestyles</button>
+                    </div>
+                </div>
+                
+                <div class="video-grid">
+                    <!-- Video 1 -->
+                    <article class="video-item" data-category="music-videos">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/ava-iverson-video.jpg" alt="Ava Iverson music video thumbnail" loading="lazy" width="320" height="180">
+                            <span class="video-duration">3:42</span>
+                            <button class="play-button" aria-label="Play Ava Iverson music video">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">Ava Iverson - Official Music Video</h4>
+                            <p class="video-meta">
+                                <span class="views">15.3K views</span>
+                                <span class="upload-date">March 1, 2024</span>
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Video 2 -->
+                    <article class="video-item" data-category="interviews">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/hot97-interview.jpg" alt="Hot 97 Interview thumbnail" loading="lazy" width="320" height="180">
+                            <span class="video-duration">18:26</span>
+                            <button class="play-button" aria-label="Play Hot 97 Interview video">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">AvarexNJ on Hot 97 - Full Interview</h4>
+                            <p class="video-meta">
+                                <span class="views">9.8K views</span>
+                                <span class="upload-date">January 25, 2025</span>
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Video 3 -->
+                    <article class="video-item" data-category="freestyles">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/tuesday-freestyle.jpg" alt="AvaTuesday Freestyle thumbnail" loading="lazy" width="320" height="180">
+                            <span class="video-duration">4:18</span>
+                            <button class="play-button" aria-label="Play AvaTuesday Freestyle video">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">AvaTuesday Freestyle Vol. 12</h4>
+                            <p class="video-meta">
+                                <span class="views">7.2K views</span>
+                                <span class="upload-date">February 20, 2025</span>
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Video 4 -->
+                    <article class="video-item" data-category="behind-scenes">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/studio-session.jpg" alt="Studio Session thumbnail" loading="lazy" width="320" height="180">
+                            <span class="video-duration">12:05</span>
+                            <button class="play-button" aria-label="Play Studio Session video">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">Making of "Respect Tha Artist" - Studio Session</h4>
+                            <p class="video-meta">
+                                <span class="views">6.5K views</span>
+                                <span class="upload-date">December 15, 2022</span>
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Video 5 -->
+                    <article class="video-item" data-category="music-videos">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/bossman-time-video.jpg" alt="BossMan Time music video thumbnail" loading="lazy" width="320" height="180">
+                            <span class="video-duration">4:25</span>
+                            <button class="play-button" aria-label="Play BossMan Time music video">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">BossMan Time - Official Music Video</h4>
+                            <p class="video-meta">
+                                <span class="views">18.9K views</span>
+                                <span class="upload-date">July 12, 2023</span>
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Video 6 -->
+                    <article class="video-item" data-category="interviews">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/thumbnails/nj-spotlight.jpg" alt="NJ Spotlight thumbnail" loading="lazy" width="320" height="180">
+                            <span class="video-duration">22:17</span>
+                            <button class="play-button" aria-label="Play NJ Spotlight video">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">NJ Spotlight: AvarexNJ on Representing New Jersey Hip-Hop</h4>
+                            <p class="video-meta">
+                                <span class="views">11.4K views</span>
+                                <span class="upload-date">October 5, 2023</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="youtube-cta">
+                    <a href="https://youtube.com/avarextv" class="subscribe-button" target="_blank" rel="noopener">
+                        <span class="youtube-icon"><i class="fab fa-youtube"></i></span> Subscribe to AvaTv
+                    </a>
+                    <p class="subscriber-count">Join 15K+ subscribers</p>
+                </div>
+                
+                <!-- YouTube Playlists -->
+                <div class="playlists-container">
+                    <h3 class="playlists-heading">Featured Playlists</h3>
+                    <div class="playlists-grid">
+                        <a href="https://www.youtube.com/playlist?list=avatuesday" class="playlist-item" target="_blank" rel="noopener">
+                            <div class="playlist-thumbnail">
+                                <img src="assets/videos/playlists/avatuesday.jpg" alt="AvaTuesday Freestyles playlist thumbnail" loading="lazy" width="240" height="135">
+                                <span class="playlist-count">12 videos</span>
+                            </div>
+                            <h4 class="playlist-title">AvaTuesday Freestyles</h4>
+                        </a>
+                        
+                        <a href="https://www.youtube.com/playlist?list=officialvideos" class="playlist-item" target="_blank" rel="noopener">
+                            <div class="playlist-thumbnail">
+                                <img src="assets/videos/playlists/music-videos.jpg" alt="Official Music Videos playlist thumbnail" loading="lazy" width="240" height="135">
+                                <span class="playlist-count">8 videos</span>
+                            </div>
+                            <h4 class="playlist-title">Official Music Videos</h4>
+                        </a>
+                        
+                        <a href="https://www.youtube.com/playlist?list=interviews" class="playlist-item" target="_blank" rel="noopener">
+                            <div class="playlist-thumbnail">
+                                <img src="assets/videos/playlists/interviews.jpg" alt="Interviews & Features playlist thumbnail" loading="lazy" width="240" height="135">
+                                <span class="playlist-count">6 videos</span>
+                            </div>
+                            <h4 class="playlist-title">Interviews & Features</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="gallery-section section">
+            <div class="container">
+                <h2 id="gallery-heading" class="section-heading">Photo Gallery</h2>
+                
+                <div class="gallery-filters">
+                    <button class="filter active" data-filter="all">All Photos</button>
+                    <button class="filter" data-filter="performances">Performances</button>
+                    <button class="filter" data-filter="studio">Studio Sessions</button>
+                    <button class="filter" data-filter="promo">Promotional</button>
+                </div>
+                
+                <div class="gallery-container">
+                    <!-- Gallery item 1 -->
+                    <figure class="gallery-item" data-category="performances">
+                        <a href="assets/gallery/large/performance-01.jpg" class="gallery-link" data-caption="Live performance at Newark venue, Summer 2024">
+                            <img 
+                                src="assets/gallery/thumbnails/performance-01-thumb.jpg" 
+                                data-src="assets/gallery/medium/performance-01-med.jpg"
+                                alt="AvarexNJ performing live on stage with microphone"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">Newark Performance, 2024</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 2 -->
+                    <figure class="gallery-item" data-category="studio">
+                        <a href="assets/gallery/large/studio-01.jpg" class="gallery-link" data-caption="Recording session for Ava Iverson album">
+                            <img 
+                                src="assets/gallery/thumbnails/studio-01-thumb.jpg" 
+                                data-src="assets/gallery/medium/studio-01-med.jpg"
+                                alt="AvarexNJ in recording studio with headphones"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">Studio Session, Ava Iverson</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 3 -->
+                    <figure class="gallery-item" data-category="promo">
+                        <a href="assets/gallery/large/promo-01.jpg" class="gallery-link" data-caption="Album promo photoshoot, Respect Tha Artist">
+                            <img 
+                                src="assets/gallery/thumbnails/promo-01-thumb.jpg" 
+                                data-src="assets/gallery/medium/promo-01-med.jpg"
+                                alt="AvarexNJ promotional photoshoot with graffiti background"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">Respect Tha Artist Promo</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 4 -->
+                    <figure class="gallery-item" data-category="performances">
+                        <a href="assets/gallery/large/performance-02.jpg" class="gallery-link" data-caption="Summer Jam performance with special guests">
+                            <img 
+                                src="assets/gallery/thumbnails/performance-02-thumb.jpg" 
+                                data-src="assets/gallery/medium/performance-02-med.jpg"
+                                alt="AvarexNJ performing at Summer Jam event"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">Summer Jam, 2023</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 5 -->
+                    <figure class="gallery-item" data-category="promo">
+                        <a href="assets/gallery/large/promo-02.jpg" class="gallery-link" data-caption="BossMan Time album promotional shoot">
+                            <img 
+                                src="assets/gallery/thumbnails/promo-02-thumb.jpg" 
+                                data-src="assets/gallery/medium/promo-02-med.jpg"
+                                alt="AvarexNJ in formal attire for BossMan Time album"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">BossMan Time Promo</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 6 -->
+                    <figure class="gallery-item" data-category="studio">
+                        <a href="assets/gallery/large/studio-02.jpg" class="gallery-link" data-caption="Working with producers on new tracks">
+                            <img 
+                                src="assets/gallery/thumbnails/studio-02-thumb.jpg" 
+                                data-src="assets/gallery/medium/studio-02-med.jpg"
+                                alt="AvarexNJ working with producers in studio"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">Production Session, 2024</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 7 -->
+                    <figure class="gallery-item" data-category="promo">
+                        <a href="assets/gallery/large/promo-03.jpg" class="gallery-link" data-caption="New Jersey street art photoshoot">
+                            <img 
+                                src="assets/gallery/thumbnails/promo-03-thumb.jpg" 
+                                data-src="assets/gallery/medium/promo-03-med.jpg"
+                                alt="AvarexNJ with New Jersey street art backdrop"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">NJ Streets Photoshoot</figcaption>
+                    </figure>
+                    
+                    <!-- Gallery item 8 -->
+                    <figure class="gallery-item" data-category="performances">
+                        <a href="assets/gallery/large/performance-03.jpg" class="gallery-link" data-caption="Club performance, NYC 2023">
+                            <img 
+                                src="assets/gallery/thumbnails/performance-03-thumb.jpg" 
+                                data-src="assets/gallery/medium/performance-03-med.jpg"
+                                alt="AvarexNJ performing at NYC club"
+                                class="gallery-image lazyload"
+                                width="300" height="200"
+                            >
+                            <div class="image-overlay">
+                                <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                            </div>
+                        </a>
+                        <figcaption class="image-caption">NYC Club Performance</figcaption>
+                    </figure>
+                </div>
+                
+                <!-- Lightbox component -->
+                <div id="gallery-lightbox" class="lightbox" role="dialog" aria-hidden="true">
+                    <button class="lightbox-close" aria-label="Close lightbox">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="lightbox-content">
+                        <img src="" alt="" class="lightbox-image">
+                        <p class="lightbox-caption"></p>
+                    </div>
+                    <button class="lightbox-prev" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="lightbox-next" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio/Career Highlights Section -->
+        <section id="portfolio" class="portfolio-section section">
+            <div class="container">
+                <h2 id="portfolio-heading" class="section-heading">Career Highlights</h2>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line" aria-hidden="true"></div>
+                    
+                    <!-- Timeline item 1 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2024-01" class="timeline-date">January 2024</time>
+                            <h3 class="milestone-title">Release of "Ava Iverson" Album</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/ava-iverson-release.jpg" alt="Ava Iverson album promotional image" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>Landmark release showcasing AvarexNJ's growth as an artist, featuring collaborations with notable producers and generating significant streaming numbers across platforms.</p>
+                                    <a href="#music" class="milestone-link">Listen to the album</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Timeline item 2 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2023-06" class="timeline-date">June 2023</time>
+                            <h3 class="milestone-title">"Respect Tha Artist" Album Launch</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/respect-tha-artist-launch.jpg" alt="Respect Tha Artist album launch event" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>Release of the breakthrough album "Respect Tha Artist" featuring AvarexNJ's unique New Jersey-influenced sound, receiving acclaim from fans and critics alike for its authentic representation of East Coast hip-hop.</p>
+                                    <a href="#music" class="milestone-link">Explore the album</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Timeline item 3 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2023-02" class="timeline-date">February 2023</time>
+                            <h3 class="milestone-title">"BossMan Time" EP Release</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/bossman-time-release.jpg" alt="BossMan Time EP release promotional image" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>The "BossMan Time" EP demonstrated AvarexNJ's versatility and production skills, featuring collaborations with notable East Coast producers and establishing his distinctive style.</p>
+                                    <a href="#music" class="milestone-link">Listen to the EP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Timeline item 4 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2022-09" class="timeline-date">September 2022</time>
+                            <h3 class="milestone-title">Launch of AvaTuesday Freestyle Series</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/avatuesday-launch.jpg" alt="AvaTuesday freestyle series launch" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>Creation of the weekly "AvaTuesday" freestyle series, showcasing AvarexNJ's lyrical abilities and building a dedicated following through consistent content delivery on YouTube.</p>
+                                    <a href="#videos" class="milestone-link">Watch the series</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Timeline item 5 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2022-04" class="timeline-date">April 2022</time>
+                            <h3 class="milestone-title">"Future Millionaire" Album Release</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/future-millionaire-release.jpg" alt="Future Millionaire album release" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>AvarexNJ's "Future Millionaire" album showcased his growth as an artist and entrepreneur, focusing on themes of ambition and perseverance while representing New Jersey's unique hip-hop culture.</p>
+                                    <a href="#music" class="milestone-link">Explore the album</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Timeline item 6 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2021-10" class="timeline-date">October 2021</time>
+                            <h3 class="milestone-title">Debut Album "Student 2 The Game"</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/student-2-the-game-release.jpg" alt="Student 2 The Game debut album release" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>AvarexNJ's debut album "Student 2 The Game" introduced his unique voice to the hip-hop landscape, establishing his New Jersey roots and commitment to authentic storytelling.</p>
+                                    <a href="#music" class="milestone-link">Listen to the debut</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Achievement Stats -->
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="achievement-stat">500K+</div>
+                        <div class="achievement-title">Total Streams</div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="achievement-stat">5</div>
+                        <div class="achievement-title">Albums Released</div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="achievement-stat">20+</div>
+                        <div class="achievement-title">Live Performances</div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="achievement-stat">15K+</div>
+                        <div class="achievement-title">YouTube Subscribers</div>
+                    </div>
+                </div>
+                
+                <!-- Press Coverage -->
+                <div class="press-section">
+                    <h3 class="press-heading">Media Coverage</h3>
+                    <div class="press-logos">
+                        <div class="press-logo">
+                            <img src="assets/press/hot97-logo.png" alt="Hot 97 logo" width="120" height="60">
+                        </div>
+                        <div class="press-logo">
+                            <img src="assets/press/complex-logo.png" alt="Complex logo" width="120" height="60">
+                        </div>
+                        <div class="press-logo">
+                            <img src="assets/press/nj-com-logo.png" alt="NJ.com logo" width="120" height="60">
+                        </div>
+                        <div class="press-logo">
+                            <img src="assets/press/power105-logo.png" alt="Power 105.1 logo" width="120" height="60">
+                        </div>
+                    </div>
+                    
+                    <div class="press-quote">
+                        <blockquote>
+                            "AvarexNJ brings authentic New Jersey energy to hip-hop, with sharp lyrics and production that stands out in today's crowded landscape."
+                        </blockquote>
+                        <cite>— Hip-Hop Weekly</cite>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary press-kit-btn">
+                        <i class="fas fa-download"></i> Download Press Kit
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Business Card / Connect Section -->
+        <section id="connect" class="business-card-section section">
+            <div class="container">
+                <h2 id="connect-heading" class="section-heading">Connect & Book</h2>
+                
+                <div class="business-card">
+                    <div class="card-front">
+                        <div class="card-logo">
+                            <img src="assets/brand/avarexnj-logo-large.png" alt="AvarexNJ official logo" width="400" height="120">
+                            <p class="brand-tagline">NJ RAP ARTIST</p>
+                        </div>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
+                                <div class="contact-text">
+                                    <p class="contact-label">TEXT:</p>
+                                    <p class="contact-value"><a href="tel:3476903209">(347) 690-3209</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                                <div class="contact-text">
+                                    <p class="contact-purpose">for bookings, features & business</p>
+                                    <p class="contact-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="qr-container">
+                                <p class="qr-label">FOLLOW ME:</p>
+                                <img src="assets/contact/qr-code.png" alt="QR code to follow AvarexNJ" width="150" height="150">
+                            </div>
+                        </div>
+                        
+                        <div class="nj-map-background" aria-hidden="true"></div>
+                    </div>
+                </div>
+                
+                <div class="social-connections">
+                    <h3 class="social-heading">Follow on Social Media</h3>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/avarextv" class="social-icon youtube" target="_blank" rel="noopener" aria-label="Follow on YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span class="social-handle">AvaTv</span>
+                        </a>
+                        <a href="https://instagram.com/avarexnj" class="social-icon instagram" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-handle">@avarexnj</span>
+                        </a>
+                        <a href="https://twitter.com/avarexnj" class="social-icon twitter" target="_blank" rel="noopener" aria-label="Follow on Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-handle">@avarexnj</span>
+                        </a>
+                        <a href="https://tiktok.com/@avarexnj" class="social-icon tiktok" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <i class="fab fa-tiktok"></i>
+                            <span class="social-handle">@avarexnj</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Booking Form -->
+                <div class="booking-form-container">
+                    <h3 class="booking-form-heading">Book AvarexNJ</h3>
+                    <form class="booking-form" action="/submit-booking" method="POST" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="booking-name" name="name" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="booking-email">Email <span class="required">*</span></label>
+                                <input type="email" id="booking-email" name="email" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="booking-phone" name="phone" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="booking-type">Booking Type <span class="required">*</span></label>
+                                <select id="booking-type" name="type" required aria-required="true">
+                                    <option value="">Select booking type</option>
+                                    <option value="performance">Live Performance</option>
+                                    <option value="feature">Feature/Collaboration</option>
+                                    <option value="interview">Interview/Media</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="booking-event-date">Event Date</label>
+                            <input type="date" id="booking-event-date" name="event-date">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="booking-details">Event Details <span class="required">*</span></label>
+                            <textarea id="booking-details" name="details" rows="5" required aria-required="true" placeholder="Please provide details about your event, venue, budget, and any specific requirements"></textarea>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                Submit Booking Request
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-heading">Contact</h2>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3 class="contact-info-heading">Get In Touch</h3>
+                        <p class="contact-description">Have questions, feedback, or want to collaborate? Reach out to AvarexNJ directly through any of the channels below.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-title">Text</h4>
+                                    <p class="method-value"><a href="tel:3476903209">(347) 690-3209</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-title">Email</h4>
+                                    <p class="method-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-title">YouTube</h4>
+                                    <p class="method-value"><a href="https://youtube.com/avarextv" target="_blank" rel="noopener">youtube.com/avarextv</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-info">
+                            <h4 class="location-title">Based In</h4>
+                            <p class="location-value">New Jersey, USA</p>
+                            <p class="location-description">Available for bookings nationwide and international events.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h3 class="contact-form-heading">Send A Message</h3>
+                        <form class="contact-form" action="/submit-contact" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="name" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="contact-email" name="email" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="contact-subject" name="subject" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">Your Message <span class="required">*</span></label>
+                                <textarea id="contact-message" name="message" rows="5" required aria-required="true"></textarea>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    Send Message
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <a href="#home" class="footer-logo">
+                        <img src="assets/images/avarexnj-logo-white.png" alt="AvarexNJ Logo" width="200" height="60">
+                    </a>
+                    <p class="footer-tagline">New Jersey Rap Artist</p>
+                    <p class="footer-copyright">&copy; 2025 AvarexNJ. All rights reserved.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-music">
+                    <h4 class="footer-heading">Stream Music</h4>
+                    <div class="footer-streaming">
+                        <a href="https://music.apple.com/artist/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
+                            <i class="fab fa-apple"></i> Apple Music
+                        </a>
+                        <a href="https://open.spotify.com/artist/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
+                            <i class="fab fa-spotify"></i> Spotify
+                        </a>
+                        <a href="https://music.youtube.com/artist/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i> YouTube Music
+                        </a>
+                        <a href="https://soundcloud.com/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
+                            <i class="fab fa-soundcloud"></i> SoundCloud
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="tel:3476903209">(347) 690-3209</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://youtube.com/avarextv" class="social-icon-footer" target="_blank" rel="noopener" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://instagram.com/avarexnj" class="social-icon-footer" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/avarexnj" class="social-icon-footer" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://tiktok.com/@avarexnj" class="social-icon-footer" target="_blank" rel="noopener" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-legal">Website designed and developed by <a href="#" target="_blank" rel="noopener">Digital Studio</a>.</p>
+                <div class="footer-policy-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Use</a>
+                </div>
+                <p class="footer-update">Last updated: March 17, 2025</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNavigation = document.querySelector('.main-navigation');
+            
+            if (mobileMenuToggle && mainNavigation) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+                    
+                    mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
+                    mainNavigation.classList.toggle('active');
+                    
+                    // Toggle icon bars to form X
+                    document.querySelectorAll('.icon-bar').forEach(bar => {
+                        bar.classList.toggle('active');
+                    });
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        if (mainNavigation && mainNavigation.classList.contains('active')) {
+                            mobileMenuToggle.click();
+                        }
+                        
+                        // Scroll to target
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Update URL without page jump
+                        history.pushState(null, null, targetId);
+                    }
+                });
+            });
+            
+            // Album tracklist toggle
+            const albumPlayButtons = document.querySelectorAll('.play-album');
+            const tracklist = document.getElementById('active-tracklist');
+            const tracklistHeading = document.querySelector('.tracklist-heading');
+            
+            if (albumPlayButtons.length && tracklist && tracklistHeading) {
+                albumPlayButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const albumItem = this.closest('.album-item');
+                        const albumTitle = albumItem.querySelector('.album-title').textContent;
+                        
+                        // Update tracklist heading
+                        tracklistHeading.textContent = `${albumTitle} - Tracklist`;
+                        
+                        // Show tracklist with animation
+                        tracklist.style.display = 'block';
+                        tracklist.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    });
+                });
+            }
+            
+            // Gallery filtering
+            const galleryFilters = document.querySelectorAll('.gallery-filters .filter');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            if (galleryFilters.length && galleryItems.length) {
+                galleryFilters.forEach(filter => {
+                    filter.addEventListener('click', function() {
+                        const filterValue = this.getAttribute('data-filter');
+                        
+                        // Update active filter button
+                        galleryFilters.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Filter gallery items
+                        galleryItems.forEach(item => {
+                            const itemCategory = item.getAttribute('data-category');
+                            
+                            if (filterValue === 'all' || filterValue === itemCategory) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+            
+            // Gallery lightbox
+            const galleryLinks = document.querySelectorAll('.gallery-link');
+            const lightbox = document.getElementById('gallery-lightbox');
+            
+            if (galleryLinks.length && lightbox) {
+                const lightboxImage = lightbox.querySelector('.lightbox-image');
+                const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+                const lightboxClose = lightbox.querySelector('.lightbox-close');
+                const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+                const lightboxNext = lightbox.querySelector('.lightbox-next');
+                
+                let currentIndex = 0;
+                const visibleGalleryLinks = () => Array.from(galleryLinks).filter(link => {
+                    const item = link.closest('.gallery-item');
+                    return window.getComputedStyle(item).display !== 'none';
+                });
+                
+                // Open lightbox
+                galleryLinks.forEach((link, index) => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        const visibleLinks = visibleGalleryLinks();
+                        currentIndex = visibleLinks.indexOf(this);
+                        
+                        const imgSrc = this.getAttribute('href');
+                        const imgCaption = this.getAttribute('data-caption');
+                        
+                        lightboxImage.setAttribute('src', imgSrc);
+                        lightboxImage.setAttribute('alt', imgCaption);
+                        lightboxCaption.textContent = imgCaption;
+                        
+                        lightbox.setAttribute('aria-hidden', 'false');
+                        lightbox.style.display = 'flex';
+                        
+                        // Focus trap
+                        lightboxClose.focus();
+                    });
+                });
+                
+                // Close lightbox
+                lightboxClose.addEventListener('click', () => {
+                    lightbox.setAttribute('aria-hidden', 'true');
+                    lightbox.style.display = 'none';
+                });
+                
+                // Navigate through images
+                lightboxPrev.addEventListener('click', () => {
+                    const visibleLinks = visibleGalleryLinks();
+                    currentIndex = (currentIndex - 1 + visibleLinks.length) % visibleLinks.length;
+                    
+                    const prevLink = visibleLinks[currentIndex];
+                    const imgSrc = prevLink.getAttribute('href');
+                    const imgCaption = prevLink.getAttribute('data-caption');
+                    
+                    lightboxImage.setAttribute('src', imgSrc);
+                    lightboxImage.setAttribute('alt', imgCaption);
+                    lightboxCaption.textContent = imgCaption;
+                });
+                
+                lightboxNext.addEventListener('click', () => {
+                    const visibleLinks = visibleGalleryLinks();
+                    currentIndex = (currentIndex + 1) % visibleLinks.length;
+                    
+                    const nextLink = visibleLinks[currentIndex];
+                    const imgSrc = nextLink.getAttribute('href');
+                    const imgCaption = nextLink.getAttribute('data-caption');
+                    
+                    lightboxImage.setAttribute('src', imgSrc);
+                    lightboxImage.setAttribute('alt', imgCaption);
+                    lightboxCaption.textContent = imgCaption;
+                });
+                
+                // Close on escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+                        lightboxClose.click();
+                    }
+                });
+            }
+            
+            // Video category filtering
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const videoItems = document.querySelectorAll('.video-item');
+            
+            if (categoryTabs.length && videoItems.length) {
+                categoryTabs.forEach(tab => {
+                    tab.addEventListener('click', function() {
+                        const category = this.getAttribute('data-category');
+                        
+                        // Update active tab
+                        categoryTabs.forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Filter videos
+                        videoItems.forEach(video => {
+                            if (category === 'all' || video.getAttribute('data-category') === category) {
+                                video.style.display = 'block';
+                            } else {
+                                video.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+            
+            // Form validation
+            const forms = document.querySelectorAll('form[novalidate]');
+            
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    let isValid = true;
+                    
+                    // Check required fields
+                    form.querySelectorAll('[required]').forEach(field => {
+                        const errorElement = field.nextElementSibling;
+                        
+                        if (!field.value.trim()) {
+                            isValid = false;
+                            field.classList.add('error');
+                            
+                            if (errorElement && errorElement.classList.contains('form-error')) {
+                                errorElement.textContent = 'This field is required';
+                            }
+                        } else {
+                            field.classList.remove('error');
+                            
+                            if (errorElement && errorElement.classList.contains('form-error')) {
+                                errorElement.textContent = '';
+                            }
+                            
+                            // Validate email fields
+                            if (field.type === 'email' && !validateEmail(field.value)) {
+                                isValid = false;
+                                field.classList.add('error');
+                                
+                                if (errorElement && errorElement.classList.contains('form-error')) {
+                                    errorElement.textContent = 'Please enter a valid email address';
+                                }
+                            }
+                        }
+                    });
+                    
+                    if (!isValid) {
+                        e.preventDefault();
+                        
+                        // Focus first error field
+                        form.querySelector('.error').focus();
+                        
+                        // Scroll to form
+                        form.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Email validation helper
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            // Lazy loading for gallery images
+            if ('IntersectionObserver' in window) {
+                const lazyImages = document.querySelectorAll('.lazyload');
+                
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const src = img.getAttribute('data-src');
+                            
+                            img.setAttribute('src', src);
+                            img.classList.remove('lazyload');
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+        });
+    </script>
+    
+    <!-- Additional CSS for components added in Part 3 -->
+    <style>
+        /* Portfolio/Timeline section */
+        .timeline-container {
+            position: relative;
+            margin: var(--spacing-xlarge) 0;
+            padding: 0 var(--spacing-medium);
+        }
+        
+        .timeline-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background-color: var(--color-gray-light);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--spacing-xlarge);
+        }
+        
+        .timeline-marker {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: var(--color-accent);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            margin-left: auto;
+            background-color: var(--color-card);
+            padding: var(--spacing-large);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 0;
+            margin-right: auto;
+        }
+        
+        .timeline-date {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: white;
+            padding: 4px 10px;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .milestone-title {
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .milestone-details {
+            display: flex;
+            gap: var(--spacing-medium);
+            align-items: flex-start;
+        }
+        
+        .milestone-details img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            flex-shrink: 0;
+        }
+        
+        .milestone-description {
+            flex-grow: 1;
+        }
+        
+        .milestone-link {
+            display: inline-block;
+            margin-top: var(--spacing-small);
+            font-weight: 600;
+        }
+        
+        /* Achievements grid */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-medium);
+            margin-top: var(--spacing-xlarge);
+        }
+        
+        .achievement-card {
+            background-color: var(--color-card);
+            padding: var(--spacing-large);
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition-base);
+        }
+        
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .achievement-icon {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .achievement-stat {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .achievement-title {
+            font-size: 1rem;
+            color: var(--color-text-light);
+        }
+        
+        /* Press section */
+        .press-section {
+            margin-top: var(--spacing-xlarge);
+            padding: var(--spacing-large);
+            background-color: var(--color-card);
+            border-radius: var(--border-radius);
+        }
+        
+        .press-heading {
+            text-align: center;
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .press-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-large);
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .press-logo img {
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(1);
+            opacity: 0.7;
+            transition: var(--transition-base);
+        }
+        
+        .press-logo:hover img {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        .press-quote {
+            text-align: center;
+            margin: var(--spacing-large) auto;
+            max-width: 800px;
+        }
+        
+        .press-quote blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .press-kit-btn {
+            display: block;
+            margin: var(--spacing-large) auto 0;
+            max-width: 200px;
+        }
+        
+        /* Business Card section */
+        .business-card-section {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        
+        .business-card-section .section-heading {
+            color: white;
+        }
+        
+        .business-card {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xlarge);
+            perspective: 1000px;
+        }
+        
+        .card-front {
+            background-color: #222;
+            padding: var(--spacing-large);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nj-map-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/brand/nj-map.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        
+        .card-logo {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .brand-tagline {
+            color: #00cc00;
+            font-family: var(--font-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: var(--spacing-small);
+        }
+        
+        .contact-details {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-medium);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-medium);
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+        }
+        
+        .contact-label {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-gray-light);
+            margin-bottom: 2px;
+        }
+        
+        .contact-value a {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .contact-value a:hover {
+            color: var(--color-accent);
+        }
+        
+        .contact-purpose {
+            font-size: 0.9rem;
+            color: var(--color-gray-light);
+            margin-bottom: 4px;
+        }
+        
+        .qr-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: var(--spacing-medium) auto;
+        }
+        
+        .qr-label {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-gray-light);
+            margin-bottom: var(--spacing-small);
+        }
+        
+        /* Social connections */
+        .social-connections {
+            text-align: center;
+            margin-bottom: var(--spacing-xlarge);
+        }
+        
+        .social-heading {
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-large);
+            flex-wrap: wrap;
+        }
+        
+        .social-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            transition: var(--transition-base);
+        }
+        
+        .social-icon i {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .social-handle {
+            font-size: 0.9rem;
+        }
+        
+        .social-icon.youtube:hover {
+            color: #ff0000;
+        }
+        
+        .social-icon.instagram:hover {
+            color: #e1306c;
+        }
+        
+        .social-icon.twitter:hover {
+            color: #1da1f2;
+        }
+        
+        .social-icon.tiktok:hover {
+            color: #00f2ea;
+        }
+        
+        /* Booking Form */
+        .booking-form-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-large);
+            margin-top: var(--spacing-xlarge);
+        }
+        
+        .booking-form-heading {
+            text-align: center;
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .booking-form .form-row {
+            display: flex;
+            gap: var(--spacing-medium);
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .booking-form .form-group {
+            flex: 1;
+        }
+        
+        .booking-form label {
+            display: block;
+            margin-bottom: var(--spacing-small);
+            font-weight: 500;
+        }
+        
+        .booking-form input,
+        .booking-form select,
+        .booking-form textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: var(--border-radius);
+            color: var(--color-text);
+        }
+        
+        .booking-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .required {
+            color: var(--color-accent);
+        }
+        
+        .form-error {
+            display: block;
+            color: var(--color-accent);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+        
+        .form-actions {
+            margin-top: var(--spacing-large);
+            text-align: center;
+        }
+        
+        .btn-lg {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Contact section */
+        .contact-section {
+            background-color: var(--color-card);
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xlarge);
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info-heading {
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .contact-description {
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-medium);
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-medium);
+        }
+        
+        .method-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        
+        .method-title {
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+        
+        .method-value a {
+            color: var(--color-text);
+        }
+        
+        .method-value a:hover {
+            color: var(--color-accent);
+        }
+        
+        .location-info {
+            margin-top: var(--spacing-large);
+            padding-top: var(--spacing-large);
+            border-top: 1px solid var(--color-gray-light);
+        }
+        
+        .location-title {
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .location-value {
+            font-weight: 600;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .contact-form-container {
+            flex: 1;
+        }
+        
+        .contact-form-heading {
+            margin-bottom: var(--spacing-large);
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: var(--spacing-small);
+            font-weight: 500;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: white;
+            border: 1px solid var(--color-gray-light);
+            border-radius: var(--border-radius);
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        /* Footer */
+        .site-footer {
+            background-color: var(--color-primary);
+            color: white;
+            padding: var(--spacing-xlarge) 0 var(--spacing-medium);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-large);
+            margin-bottom: var(--spacing-xlarge);
+        }
+        
+        .footer-branding {
+            text-align: center;
+        }
+        
+        .footer-logo {
+            display: inline-block;
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .footer-tagline {
+            font-family: var(--font-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .footer-copyright {
+            font-size: 0.9rem;
+            color: var(--color-gray-light);
+        }
+        
+        .footer-heading {
+            color: white;
+            margin-bottom: var(--spacing-medium);
+            position: relative;
+            padding-bottom: var(--spacing-small);
+        }
+        
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+        
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-nav li {
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .footer-nav a {
+            color: var(--color-gray-light);
+        }
+        
+        .footer-nav a:hover {
+            color: white;
+        }
+        
+        .footer-streaming {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-small);
+        }
+        
+        .footer-stream-link {
+            color: var(--color-gray-light);
+        }
+        
+        .footer-stream-link:hover {
+            color: white;
+        }
+        
+        .footer-contact-info {
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .footer-contact-info p {
+            margin-bottom: var(--spacing-small);
+            color: var(--color-gray-light);
+        }
+        
+        .footer-contact-info a {
+            color: var(--color-gray-light);
+        }
+        
+        .footer-contact-info a:hover {
+            color: white;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: var(--spacing-medium);
+        }
+        
+        .social-icon-footer {
+            color: var(--color-gray-light);
+            font-size: 1.5rem;
+        }
+        
+        .social-icon-footer:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            padding-top: var(--spacing-medium);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--color-gray-light);
+        }
+        
+        .footer-legal {
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .footer-legal a {
+            color: var(--color-gray-light);
+        }
+        
+        .footer-legal a:hover {
+            color: white;
+        }
+        
+        .footer-policy-links {
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .footer-policy-links a {
+            color: var(--color-gray-light);
+            margin: 0 var(--spacing-small);
+        }
+        
+        .footer-policy-links a:hover {
+            color: white;
+        }
+        
+        .footer-update {
+            font-size: 0.8rem;
+        }
+        
+        /* Media queries for responsive design */
+        @media (min-width: 576px) {
+            .contact-container {
+                flex-direction: row;
+            }
+            
+            .contact-info, .contact-form-container {
+                flex: 1;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .timeline-content {
+                padding: var(--spacing-xlarge);
+            }
+            
+            .achievements-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .booking-form .form-row {
+                margin-bottom: var(--spacing-medium);
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .footer-content {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+            }
+            
+            .footer-branding {
+                text-align: left;
+            }
+        }
+    </style>
+</body>
+</html>

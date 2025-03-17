@@ -1,0 +1,22 @@
+{
+    "name": "avarexnj-website",
+    "version": "1.0.0",
+    "description": "Official website for AvarexNJ - New Jersey Hip-Hop Artist",
+    "main": "index.html",
+    "scripts": {
+        "start": "serve .",
+        "build": "echo 'No build step required'"
+    },
+    "keywords": [
+        "avarexnj",
+        "hip-hop",
+        "new-jersey",
+        "music",
+        "artist"
+    ],
+    "author": "AvarexNJ",
+    "license": "ISC",
+    "dependencies": {
+        "serve": "^14.2.1"
+    }
+}
