@@ -749,31 +749,156 @@
         /* Music Section */
         
         .music-section {
+            padding: var(--spacing-xlarge) 0;
             background-color: var(--color-background);
-            background-color: #f8f9fa;
-            padding: 4rem 0;
         }
         
         .music-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xlarge);
+            margin-top: var(--spacing-large);
         }
         
         .music-column {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-large);
         }
         
         .column-heading {
             font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #e9ecef;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: var(--spacing-medium);
+            position: relative;
+        }
+        
+        .music-item {
+            background: var(--color-card);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .music-item:hover {
+            transform: translateY(-4px);
+        }
+        
+        .music-item-artwork {
+            position: relative;
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+        
+        .music-item-artwork img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .music-item:hover .music-item-artwork img {
+            transform: scale(1.05);
+        }
+        
+        .music-item-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+        
+        .music-item:hover .music-item-overlay {
+            opacity: 1;
+        }
+        
+        .play-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            color: #000;
+            font-size: 1.5rem;
+        }
+        
+        .play-button:hover {
+            transform: scale(1.1);
+            background: #fff;
+        }
+        
+        .explicit-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .music-item-info {
+            padding: var(--spacing-medium);
+        }
+        
+        .music-item-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 0 4px;
+            color: var(--color-text);
+        }
+        
+        .music-item-year {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            margin: 0 0 var(--spacing-small);
+        }
+        
+        .music-item-platforms {
+            display: flex;
+            gap: var(--spacing-medium);
+            margin-top: var(--spacing-small);
+        }
+        
+        .platform-link {
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+        
+        .platform-link:hover {
+            opacity: 1;
+        }
+        
+        .platform-link img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+        
+        @media (max-width: 768px) {
+            .music-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-large);
+            }
+            .music-item-artwork {
+                height: auto;
+            }
         }
         /* Albums Container Styles */
         
@@ -2282,31 +2407,27 @@
                                     <source srcset="assets/media/images/optimized/thumbnails/Ava Iverson Album Cover.jpg" type="image/jpeg" media="(max-width: 767px)">
                                     <img src="assets/media/images/optimized/full/Ava Iverson Album Cover.jpg" alt="Ava Iverson album cover" loading="lazy" width="300" height="300">
                                 </picture>
-                                <span class="explicit-badge">E</span>
-                                <button class="play-button" aria-label="Play Ava Iverson" data-audio="assets/media/audio/optimized/02. Avarex NJ - Just Watch Him.mp3">
-                                    <i class="fas fa-play"></i>
-                                </button>
+                                <div class="music-item-overlay">
+                                    <button class="play-button" aria-label="Play Ava Iverson" data-audio="assets/media/audio/optimized/02. Avarex NJ - Just Watch Him.mp3">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <span class="explicit-badge">E</span>
+                                </div>
                             </div>
                             <div class="music-item-info">
                                 <h4 class="music-item-title">Ava Iverson</h4>
                                 <p class="music-item-year">2024</p>
                                 <div class="music-item-platforms">
-                                    <a href="https://music.apple.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                    <a href="https://music.apple.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Apple Music" class="platform-link">
                                         <picture>
                                             <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
                                             <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
                                         </picture>
                                     </a>
-                                    <a href="https://open.spotify.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                    <a href="https://open.spotify.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Spotify" class="platform-link">
                                         <picture>
                                             <source srcset="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.webp" type="image/webp">
                                             <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24" loading="lazy">
-                                        </picture>
-                                    </a>
-                                    <a href="https://music.youtube.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                        <picture>
-                                            <source srcset="assets/media/icons/optimized/Youtube logo.webp" type="image/webp">
-                                            <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music" width="24" height="24" loading="lazy">
                                         </picture>
                                     </a>
                                 </div>
@@ -2316,50 +2437,34 @@
                         <!-- Album: Respect Tha Artist -->
                         <article class="music-item">
                             <div class="music-item-artwork">
-                                <img src="assets/media/images/Respect Tha Artist Album Cover.png" alt="Respect Tha Artist album cover" loading="lazy">
-                                <span class="explicit-badge">E</span>
-                                <button class="play-button" aria-label="Play Respect Tha Artist" data-audio="assets/media/audio/optimized/AvarexNJ - Respect Tha Artist (Clean).mp3">
-                                    <i class="fas fa-play"></i>
-                                </button>
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/thumbnails/Respect Tha Artist Album Cover.webp" type="image/webp" media="(max-width: 767px)">
+                                    <source srcset="assets/media/images/optimized/full/Respect Tha Artist Album Cover.webp" type="image/webp">
+                                    <source srcset="assets/media/images/optimized/thumbnails/Respect Tha Artist Album Cover.jpg" type="image/jpeg" media="(max-width: 767px)">
+                                    <img src="assets/media/images/optimized/full/Respect Tha Artist Album Cover.jpg" alt="Respect Tha Artist album cover" loading="lazy" width="300" height="300">
+                                </picture>
+                                <div class="music-item-overlay">
+                                    <button class="play-button" aria-label="Play Respect Tha Artist" data-audio="assets/media/audio/optimized/AvarexNJ - Respect Tha Artist (Clean).mp3">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <span class="explicit-badge">E</span>
+                                </div>
                             </div>
                             <div class="music-item-info">
                                 <h4 class="music-item-title">Respect Tha Artist</h4>
                                 <p class="music-item-year">2023</p>
                                 <div class="music-item-platforms">
-                                    <a href="https://music.apple.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                    <a href="https://music.apple.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Apple Music" class="platform-link">
+                                        <picture>
+                                            <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
+                                            <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
+                                        </picture>
                                     </a>
-                                    <a href="https://open.spotify.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
-                                    </a>
-                                    <a href="https://music.youtube.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- Album: BossMan Time -->
-                        <article class="music-item">
-                            <div class="music-item-artwork">
-                                <img src="assets/media/images/BossMan Time Album Cover.png" alt="BossMan Time album cover" loading="lazy">
-                                <span class="explicit-badge">E</span>
-                                <button class="play-button" aria-label="Play BossMan Time">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                            <div class="music-item-info">
-                                <h4 class="music-item-title">BossMan Time</h4>
-                                <p class="music-item-year">2023</p>
-                                <div class="music-item-platforms">
-                                    <a href="https://music.apple.com/album/bossman-time" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
-                                    </a>
-                                    <a href="https://open.spotify.com/album/bossman-time" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
-                                    </a>
-                                    <a href="https://music.youtube.com/album/bossman-time" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                    <a href="https://open.spotify.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Spotify" class="platform-link">
+                                        <picture>
+                                            <source srcset="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.webp" type="image/webp">
+                                            <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24" loading="lazy">
+                                        </picture>
                                     </a>
                                 </div>
                             </div>
@@ -2866,39 +2971,7 @@
             <div class="container">
                 <h2 id="connect-heading" class="section-heading">Connect & Book</h2>
 
-                <div class="business-card">
-                    <div class="card-front">
-                        <div class="card-logo">
-                            <img src="assets/brand/avarexnj-logo-large.png" alt="AvarexNJ official logo" width="400" height="120">
-                            <p class="brand-tagline">NJ RAP ARTIST</p>
-                        </div>
 
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <span class="contact-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
-                                <div class="contact-text">
-                                    <p class="contact-label">TEXT:</p>
-                                    <p class="contact-value"><a href="tel:3476903209">(347) 690-3209</a></p>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <span class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
-                                <div class="contact-text">
-                                    <p class="contact-purpose">for bookings, features & business</p>
-                                    <p class="contact-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
-                                </div>
-                            </div>
-
-                            <div class="qr-container">
-                                <p class="qr-label">FOLLOW ME:</p>
-                                <img src="assets/contact/qr-code.png" alt="QR code to follow AvarexNJ" width="150" height="150">
-                            </div>
-                        </div>
-
-                        <div class="nj-map-background" aria-hidden="true"></div>
-                    </div>
-                </div>
 
                 <div class="social-connections">
                     <h3 class="social-heading">Follow on Social Media</h3>
