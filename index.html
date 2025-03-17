@@ -749,6 +749,7 @@
         /* Music Section */
         
         .music-section {
+            background-color: var(--color-background);
             background-color: #f8f9fa;
             padding: 4rem 0;
         }
@@ -2168,7 +2169,12 @@
 
                 <div class="release-container">
                     <div class="release-artwork">
-                        <img src="assets/media/images/Ava Iverson Album Cover.png" alt="Ava Iverson album cover featuring AvarexNJ with basketball on red background" width="300" height="300">
+                        <picture>
+                            <source srcset="assets/media/images/optimized/thumbnails/Ava Iverson Album Cover.webp" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="assets/media/images/optimized/full/Ava Iverson Album Cover.webp" type="image/webp">
+                            <source srcset="assets/media/images/optimized/thumbnails/Ava Iverson Album Cover.jpg" type="image/jpeg" media="(max-width: 767px)">
+                            <img src="assets/media/images/optimized/full/Ava Iverson Album Cover.jpg" alt="Ava Iverson album cover" loading="lazy" width="300" height="300">
+                        </picture>
                         <span class="explicit-label" aria-label="Explicit content">E</span>
                     </div>
 
@@ -2190,15 +2196,24 @@
 
                         <div class="streaming-buttons">
                             <a href="https://music.apple.com/album/ava-iverson" class="streaming-button" target="_blank" rel="noopener">
-                                <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24">
+                                <picture>
+                                    <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
+                                    <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
+                                </picture>
                                 <span>Listen on Apple Music</span>
                             </a>
                             <a href="https://open.spotify.com/album/ava-iverson" class="streaming-button" target="_blank" rel="noopener">
-                                <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24">
+                                <picture>
+                                    <source srcset="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.webp" type="image/webp">
+                                    <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24" loading="lazy">
+                                </picture>
                                 <span>Listen on Spotify</span>
                             </a>
                             <a href="https://music.youtube.com/album/ava-iverson" class="streaming-button" target="_blank" rel="noopener">
-                                <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music" width="24" height="24">
+                                <picture>
+                                    <source srcset="assets/media/icons/optimized/Youtube logo.webp" type="image/webp">
+                                    <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music" width="24" height="24" loading="lazy">
+                                </picture>
                                 <span>Listen on YouTube Music</span>
                             </a>
                         </div>
@@ -2257,798 +2272,804 @@
                     <!-- Albums Column -->
                     <div class="music-column">
                         <h3 class="column-heading">Albums</h3>
-                        <div class="albums-container">
-                            <!-- Album 1: Ava Iverson (2024) -->
-                            <article class="album-item">
-                                <div class="album-artwork">
-                                    <img src="assets/media/images/Ava Iverson Album Cover.png" alt="Ava Iverson album cover featuring AvarexNJ with basketball on red background" width="300" height="300">
-                                    <span class="explicit-label" aria-label="Explicit content">E</span>
-                                </div>
-                                <div class="album-info">
-                                    <h4 class="album-title">Ava Iverson</h4>
-                                    <p class="album-year">2024</p>
-                                    <div class="album-actions">
-                                        <button class="play-album" aria-label="Play Ava Iverson album">
-                                            <span class="icon-play"><i class="fas fa-play"></i></span> Play
-                                        </button>
-                                        <div class="streaming-options">
-                                            <a href="https://music.apple.com/album/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                                <i class="fab fa-apple"></i>
-                                            </a>
-                                            <a href="https://open.spotify.com/album/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                                <i class="fab fa-spotify"></i>
-                                            </a>
-                                            <a href="https://music.youtube.com/album/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                                <i class="fab fa-youtube"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
 
-                            <!-- Album 2: Respect Tha Artist (2023) -->
-                            <article class="album-item">
-                                <div class="album-artwork">
-                                    <img src="assets/media/images/Respect the Hustle Albulm Cover.jpg" alt="Respect Tha Artist album cover featuring AvarexNJ sitting beside colorful graffiti wall" width="300" height="300">
-                                    <span class="explicit-label" aria-label="Explicit content">E</span>
+                        <!-- Album: Ava Iverson -->
+                        <article class="music-item">
+                            <div class="music-item-artwork">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/thumbnails/Ava Iverson Album Cover.webp" type="image/webp" media="(max-width: 767px)">
+                                    <source srcset="assets/media/images/optimized/full/Ava Iverson Album Cover.webp" type="image/webp">
+                                    <source srcset="assets/media/images/optimized/thumbnails/Ava Iverson Album Cover.jpg" type="image/jpeg" media="(max-width: 767px)">
+                                    <img src="assets/media/images/optimized/full/Ava Iverson Album Cover.jpg" alt="Ava Iverson album cover" loading="lazy" width="300" height="300">
+                                </picture>
+                                <span class="explicit-badge">E</span>
+                                <button class="play-button" aria-label="Play Ava Iverson">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="music-item-info">
+                                <h4 class="music-item-title">Ava Iverson</h4>
+                                <p class="music-item-year">2024</p>
+                                <div class="music-item-platforms">
+                                    <a href="https://music.apple.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <picture>
+                                            <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
+                                            <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
+                                        </picture>
+                                    </a>
+                                    <a href="https://open.spotify.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <picture>
+                                            <source srcset="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.webp" type="image/webp">
+                                            <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24" loading="lazy">
+                                        </picture>
+                                    </a>
+                                    <a href="https://music.youtube.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <picture>
+                                            <source srcset="assets/media/icons/optimized/Youtube logo.webp" type="image/webp">
+                                            <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music" width="24" height="24" loading="lazy">
+                                        </picture>
+                                    </a>
                                 </div>
-                                <div class="album-info">
-                                    <h4 class="album-title">Respect Tha Artist</h4>
-                                    <p class="album-year">2023</p>
-                                    <div class="album-actions">
-                                        <button class="play-album" aria-label="Play Respect Tha Artist album">
-                                            <span class="icon-play"><i class="fas fa-play"></i></span> Play
-                                        </button>
-                                        <div class="streaming-options">
-                                            <a href="https://music.apple.com/album/respect-tha-artist" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                                <i class="fab fa-apple"></i>
-                                            </a>
-                                            <a href="https://open.spotify.com/album/respect-tha-artist" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                                <i class="fab fa-spotify"></i>
-                                            </a>
-                                            <a href="https://music.youtube.com/album/respect-tha-artist" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                                <i class="fab fa-youtube"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
+                        </article>
 
-                            <!-- Album 3: BossMan Time (2023) -->
-                            <article class="album-item">
-                                <div class="album-artwork">
-                                    <img src="assets/albums/bossman-time-2023.jpg" alt="BossMan Time album cover featuring AvarexNJ in formal attire with pool table" width="300" height="300">
-                                    <span class="explicit-label" aria-label="Explicit content">E</span>
+                        <!-- Album: Respect Tha Artist -->
+                        <article class="music-item">
+                            <div class="music-item-artwork">
+                                <img src="assets/media/images/Respect Tha Artist Album Cover.png" alt="Respect Tha Artist album cover" loading="lazy">
+                                <span class="explicit-badge">E</span>
+                                <button class="play-button" aria-label="Play Respect Tha Artist">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="music-item-info">
+                                <h4 class="music-item-title">Respect Tha Artist</h4>
+                                <p class="music-item-year">2023</p>
+                                <div class="music-item-platforms">
+                                    <a href="https://music.apple.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                    </a>
+                                    <a href="https://open.spotify.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                    </a>
+                                    <a href="https://music.youtube.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                    </a>
                                 </div>
-                                <div class="album-info">
-                                    <h4 class="album-title">BossMan Time</h4>
-                                    <p class="album-year">2023</p>
-                                    <div class="album-actions">
-                                        <button class="play-album" aria-label="Play BossMan Time album">
-                                            <span class="icon-play"><i class="fas fa-play"></i></span> Play
-                                        </button>
-                                        <div class="streaming-options">
-                                            <a href="https://music.apple.com/album/bossman-time" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                                <i class="fab fa-apple"></i>
-                                            </a>
-                                            <a href="https://open.spotify.com/album/bossman-time" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                                <i class="fab fa-spotify"></i>
-                                            </a>
-                                            <a href="https://music.youtube.com/album/bossman-time" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                                <i class="fab fa-youtube"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                            </div>
+                        </article>
+
+                        <!-- Album: BossMan Time -->
+                        <article class="music-item">
+                            <div class="music-item-artwork">
+                                <img src="assets/media/images/BossMan Time Album Cover.png" alt="BossMan Time album cover" loading="lazy">
+                                <span class="explicit-badge">E</span>
+                                <button class="play-button" aria-label="Play BossMan Time">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="music-item-info">
+                                <h4 class="music-item-title">BossMan Time</h4>
+                                <p class="music-item-year">2023</p>
+                                <div class="music-item-platforms">
+                                    <a href="https://music.apple.com/album/bossman-time" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                    </a>
+                                    <a href="https://open.spotify.com/album/bossman-time" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                    </a>
+                                    <a href="https://music.youtube.com/album/bossman-time" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                    </a>
                                 </div>
-                            </article>
-                        </div>
+                            </div>
+                        </article>
                     </div>
 
                     <!-- Singles Column -->
                     <div class="music-column">
                         <h3 class="column-heading">Singles</h3>
-                        <div class="singles-container">
-                            <!-- Single 1 -->
-                            <article class="single-item">
-                                <div class="single-artwork">
-                                    <img src="assets/singles/ava-iverson-single.jpg" alt="Ava Iverson single cover art" width="200" height="200">
-                                    <span class="explicit-label" aria-label="Explicit content">E</span>
-                                    <button class="play-button" aria-label="Play Ava Iverson single">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="single-info">
-                                    <h4 class="single-title">Ava Iverson</h4>
-                                    <p class="single-year">2024</p>
-                                    <div class="streaming-options">
-                                        <a href="https://music.apple.com/single/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                            <i class="fab fa-apple"></i>
-                                        </a>
-                                        <a href="https://open.spotify.com/single/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                            <i class="fab fa-spotify"></i>
-                                        </a>
-                                        <a href="https://music.youtube.com/single/ava-iverson" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
 
-                            <!-- Single 2 -->
-                            <article class="single-item">
-                                <div class="single-artwork">
-                                    <img src="assets/singles/vibe-not-right.jpg" alt="Vibe Not Right single cover art" width="200" height="200">
-                                    <span class="explicit-label" aria-label="Explicit content">E</span>
-                                    <button class="play-button" aria-label="Play Vibe Not Right single">
-                                        <i class="fas fa-play"></i>
-                                    </button>
+                        <!-- Single: Ava Iverson -->
+                        <article class="music-item">
+                            <div class="music-item-artwork">
+                                <img src="assets/media/images/Ava Iverson Single Cover.png" alt="Ava Iverson single cover" loading="lazy">
+                                <span class="explicit-badge">E</span>
+                                <button class="play-button" aria-label="Play Ava Iverson single">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="music-item-info">
+                                <h4 class="music-item-title">Ava Iverson</h4>
+                                <p class="music-item-year">2024</p>
+                                <div class="music-item-platforms">
+                                    <a href="https://music.apple.com/album/ava-iverson-single" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                    </a>
+                                    <a href="https://open.spotify.com/track/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=ava-iverson" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                    </a>
                                 </div>
-                                <div class="single-info">
-                                    <h4 class="single-title">Vibe Not Right</h4>
-                                    <p class="single-year">2023</p>
-                                    <div class="streaming-options">
-                                        <a href="https://music.apple.com/single/vibe-not-right" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                            <i class="fab fa-apple"></i>
-                                        </a>
-                                        <a href="https://open.spotify.com/single/vibe-not-right" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                            <i class="fab fa-spotify"></i>
-                                        </a>
-                                        <a href="https://music.youtube.com/single/vibe-not-right" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
+                        </article>
 
-                            <!-- Single 3 -->
-                            <article class="single-item">
-                                <div class="single-artwork">
-                                    <img src="assets/singles/just-watch-him.jpg" alt="Just Watch Him single cover art" width="200" height="200">
-                                    <span class="explicit-label" aria-label="Explicit content">E</span>
-                                    <button class="play-button" aria-label="Play Just Watch Him single">
-                                        <i class="fas fa-play"></i>
-                                    </button>
+                        <!-- Single: Vibe Not Right -->
+                        <article class="music-item">
+                            <div class="music-item-artwork">
+                                <img src="assets/media/images/Vibe Not Right Single Cover.png" alt="Vibe Not Right single cover" loading="lazy">
+                                <span class="explicit-badge">E</span>
+                                <button class="play-button" aria-label="Play Vibe Not Right">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="music-item-info">
+                                <h4 class="music-item-title">Vibe Not Right</h4>
+                                <p class="music-item-year">2023</p>
+                                <div class="music-item-platforms">
+                                    <a href="https://music.apple.com/album/vibe-not-right" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                    </a>
+                                    <a href="https://open.spotify.com/track/vibe-not-right" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=vibe-not-right" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                    </a>
                                 </div>
-                                <div class="single-info">
-                                    <h4 class="single-title">Just Watch Him</h4>
-                                    <p class="single-year">2023</p>
-                                    <div class="streaming-options">
-                                        <a href="https://music.apple.com/single/just-watch-him" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                            <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24">
-                                        </a>
-                                        <a href="https://open.spotify.com/single/just-watch-him" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                            <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24">
-                                        </a>
-                                        <a href="https://music.youtube.com/single/just-watch-him" class="streaming-icon" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                            <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music" width="24" height="24">
-                                        </a>
-                                    </div>
+                            </div>
+                        </article>
+
+                        <!-- Single: Just Watch Him -->
+                        <article class="music-item">
+                            <div class="music-item-artwork">
+                                <img src="assets/media/images/Just Watch Him Single Cover.png" alt="Just Watch Him single cover" loading="lazy">
+                                <span class="explicit-badge">E</span>
+                                <button class="play-button" aria-label="Play Just Watch Him">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="music-item-info">
+                                <h4 class="music-item-title">Just Watch Him</h4>
+                                <p class="music-item-year">2023</p>
+                                <div class="music-item-platforms">
+                                    <a href="https://music.apple.com/album/just-watch-him" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                    </a>
+                                    <a href="https://open.spotify.com/track/just-watch-him" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=just-watch-him" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
+                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                    </a>
                                 </div>
-                            </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Content Section -->
+        <section id="videos" class="videos-section section">
+            <div class="container">
+                <h2 id="videos-heading" class="section-heading">AvarexTV</h2>
+
+                <div class="featured-video">
+                    <div class="video-container" data-video-id="FEATURED_VIDEO_ID">
+                        <video class="video-player" controls poster="assets/media/images/Thank Me (Music Video) Screenshot 1.jpg">
+                    <source src="assets/media/videos/Thank Meee PROMO 3 REEL OUT NOW.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                        <div class="video-info">
+                            <h3 class="video-title">Respect Tha Artist - Official Music Video</h3>
+                            <p class="video-description">The official music video for "Respect Tha Artist" showcasing AvarexNJ's New Jersey roots and authentic style.</p>
+                            <p class="video-meta">
+                                <span class="views">25.7K views</span>
+                                <span class="upload-date">February 12, 2023</span>
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <div class="video-categories">
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">All Videos</button>
+                        <button class="category-tab" data-category="music-videos">Music Videos</button>
+                        <button class="category-tab" data-category="interviews">Interviews</button>
+                        <button class="category-tab" data-category="behind-scenes">Behind The Scenes</button>
+                        <button class="category-tab" data-category="freestyles">Freestyles</button>
+                    </div>
+                </div>
 
+                <div class="video-grid">
+                    <!-- Video 1 -->
+                    <article class="video-item" data-category="music-videos">
+                        <div class="video-thumbnail">
+                            <video class="video-player" controls poster="assets/media/images/Thank Me (Music Video) Screenshot 2.jpg">
+                        <source src="assets/media/videos/Snapinst.app_video_AQOsMTFaUDZhyW9_xl5tbLBRFXtBtHUncBVoNQlx8BTiqXb4-zV3CroVAaklfta9H7njv2IjMNxoQjHNwBUY5tStXNxGR13JdyvuIck.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                            <span class="video-duration">3:42</span>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">Ava Iverson - Official Music Video</h4>
+                            <p class="video-meta">
+                                <span class="views">15.3K views</span>
+                                <span class="upload-date">March 1, 2024</span>
+                            </p>
+                        </div>
+                    </article>
 
-                <!-- YouTube Content Section -->
-                <section id="videos" class="videos-section section">
-                    <div class="container">
-                        <h2 id="videos-heading" class="section-heading">AvarexTV</h2>
+                    <!-- Video 2 -->
+                    <article class="video-item" data-category="interviews">
+                        <div class="video-thumbnail">
+                            <video class="video-player" controls poster="assets/media/images/Studio Recording Photo3.jpg">
+                        <source src="assets/media/videos/Snapinst.app_video_AQPAph4N10ZvgPkPbRtiN1I4AoJnh2bjht8WK_G1ip5earwlRx7zK5N15ZdQNoPVW4m0srNo-RlK9ovY-9nMmKmyFWdVJTVGUKpqJpQ.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                            <span class="video-duration">18:26</span>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">AvarexNJ on Hot 97 - Full Interview</h4>
+                            <p class="video-meta">
+                                <span class="views">9.8K views</span>
+                                <span class="upload-date">January 25, 2025</span>
+                            </p>
+                        </div>
+                    </article>
 
-                        <div class="featured-video">
-                            <div class="video-container" data-video-id="FEATURED_VIDEO_ID">
-                                <video class="video-player" controls poster="assets/media/images/Thank Me (Music Video) Screenshot 1.jpg">
-                            <source src="assets/media/videos/Thank Meee PROMO 3 REEL OUT NOW.mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
-                                <div class="video-info">
-                                    <h3 class="video-title">Respect Tha Artist - Official Music Video</h3>
-                                    <p class="video-description">The official music video for "Respect Tha Artist" showcasing AvarexNJ's New Jersey roots and authentic style.</p>
-                                    <p class="video-meta">
-                                        <span class="views">25.7K views</span>
-                                        <span class="upload-date">February 12, 2023</span>
-                                    </p>
-                                </div>
+                    <!-- Video 3 -->
+                    <article class="video-item" data-category="freestyles">
+                        <div class="video-thumbnail">
+                            <video class="video-player" controls poster="assets/media/images/Video shoot Pics 9 (avanj) copy.jpg">
+                        <source src="assets/media/videos/Snapinsta.app_video_An82BilIbIClQfBVUhb8LtAJPbLgvwzY9jVL780ZqeuHOoHY2JL_5Ekk99w142K-k1AYGhi7Fhmcwat2DkaAXzXR.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                            <span class="video-duration">4:18</span>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-title">AvaTuesday Freestyle Vol. 12</h4>
+                            <p class="video-meta">
+                                <span class="views">7.2K views</span>
+                                <span class="upload-date">February 20, 2025</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="youtube-cta">
+                    <a href="https://youtube.com/avarextv" class="subscribe-button" target="_blank" rel="noopener">
+                        <span class="youtube-icon"><i class="fab fa-youtube"></i></span> Subscribe to AvaTv
+                    </a>
+                    <p class="subscriber-count">Join 15K+ subscribers</p>
+                </div>
+
+                <!-- YouTube Playlists -->
+                <div class="playlists-container">
+                    <h3 class="playlists-heading">Featured Playlists</h3>
+                    <div class="playlists-grid">
+                        <a href="https://www.youtube.com/playlist?list=avatuesday" class="playlist-item" target="_blank" rel="noopener">
+                            <div class="playlist-thumbnail">
+                                <img src="assets/videos/playlists/avatuesday.jpg" alt="AvaTuesday Freestyles playlist thumbnail" loading="lazy" width="240" height="135">
+                                <span class="playlist-count">12 videos</span>
                             </div>
-                        </div>
+                            <h4 class="playlist-title">AvaTuesday Freestyles</h4>
+                        </a>
 
-                        <div class="video-categories">
-                            <div class="category-tabs">
-                                <button class="category-tab active" data-category="all">All Videos</button>
-                                <button class="category-tab" data-category="music-videos">Music Videos</button>
-                                <button class="category-tab" data-category="interviews">Interviews</button>
-                                <button class="category-tab" data-category="behind-scenes">Behind The Scenes</button>
-                                <button class="category-tab" data-category="freestyles">Freestyles</button>
+                        <a href="https://www.youtube.com/playlist?list=officialvideos" class="playlist-item" target="_blank" rel="noopener">
+                            <div class="playlist-thumbnail">
+                                <img src="assets/videos/playlists/music-videos.jpg" alt="Official Music Videos playlist thumbnail" loading="lazy" width="240" height="135">
+                                <span class="playlist-count">8 videos</span>
                             </div>
-                        </div>
+                            <h4 class="playlist-title">Official Music Videos</h4>
+                        </a>
 
-                        <div class="video-grid">
-                            <!-- Video 1 -->
-                            <article class="video-item" data-category="music-videos">
-                                <div class="video-thumbnail">
-                                    <video class="video-player" controls poster="assets/media/images/Thank Me (Music Video) Screenshot 2.jpg">
-                                <source src="assets/media/videos/Snapinst.app_video_AQOsMTFaUDZhyW9_xl5tbLBRFXtBtHUncBVoNQlx8BTiqXb4-zV3CroVAaklfta9H7njv2IjMNxoQjHNwBUY5tStXNxGR13JdyvuIck.mp4" type="video/mp4">
-                                Your browser does not support the video element.
-                            </video>
-                                    <span class="video-duration">3:42</span>
-                                </div>
-                                <div class="video-info">
-                                    <h4 class="video-title">Ava Iverson - Official Music Video</h4>
-                                    <p class="video-meta">
-                                        <span class="views">15.3K views</span>
-                                        <span class="upload-date">March 1, 2024</span>
-                                    </p>
-                                </div>
-                            </article>
+                        <a href="https://www.youtube.com/playlist?list=interviews" class="playlist-item" target="_blank" rel="noopener">
+                            <div class="playlist-thumbnail">
+                                <img src="assets/videos/playlists/interviews.jpg" alt="Interviews & Features playlist thumbnail" loading="lazy" width="240" height="135">
+                                <span class="playlist-count">6 videos</span>
+                            </div>
+                            <h4 class="playlist-title">Interviews & Features</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <!-- Video 2 -->
-                            <article class="video-item" data-category="interviews">
-                                <div class="video-thumbnail">
-                                    <video class="video-player" controls poster="assets/media/images/Studio Recording Photo3.jpg">
-                                <source src="assets/media/videos/Snapinst.app_video_AQPAph4N10ZvgPkPbRtiN1I4AoJnh2bjht8WK_G1ip5earwlRx7zK5N15ZdQNoPVW4m0srNo-RlK9ovY-9nMmKmyFWdVJTVGUKpqJpQ.mp4" type="video/mp4">
-                                Your browser does not support the video element.
-                            </video>
-                                    <span class="video-duration">18:26</span>
-                                </div>
-                                <div class="video-info">
-                                    <h4 class="video-title">AvarexNJ on Hot 97 - Full Interview</h4>
-                                    <p class="video-meta">
-                                        <span class="views">9.8K views</span>
-                                        <span class="upload-date">January 25, 2025</span>
-                                    </p>
-                                </div>
-                            </article>
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="gallery-section section">
+            <div class="container">
+                <h2 id="gallery-heading" class="section-heading">Photo Gallery</h2>
 
-                            <!-- Video 3 -->
-                            <article class="video-item" data-category="freestyles">
-                                <div class="video-thumbnail">
-                                    <video class="video-player" controls poster="assets/media/images/Video shoot Pics 9 (avanj) copy.jpg">
-                                <source src="assets/media/videos/Snapinsta.app_video_An82BilIbIClQfBVUhb8LtAJPbLgvwzY9jVL780ZqeuHOoHY2JL_5Ekk99w142K-k1AYGhi7Fhmcwat2DkaAXzXR.mp4" type="video/mp4">
-                                Your browser does not support the video element.
-                            </video>
-                                    <span class="video-duration">4:18</span>
-                                </div>
-                                <div class="video-info">
-                                    <h4 class="video-title">AvaTuesday Freestyle Vol. 12</h4>
-                                    <p class="video-meta">
-                                        <span class="views">7.2K views</span>
-                                        <span class="upload-date">February 20, 2025</span>
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
+                <div class="gallery-filters">
+                    <button class="filter active" data-filter="all">All Photos</button>
+                    <button class="filter" data-filter="performances">Performances</button>
+                    <button class="filter" data-filter="studio">Studio Sessions</button>
+                    <button class="filter" data-filter="promo">Promotional</button>
+                </div>
 
-                        <div class="youtube-cta">
-                            <a href="https://youtube.com/avarextv" class="subscribe-button" target="_blank" rel="noopener">
-                                <span class="youtube-icon"><i class="fab fa-youtube"></i></span> Subscribe to AvaTv
+                <div class="carousel-container">
+                    <button class="carousel-button prev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+                    <div class="carousel-track">
+                        <!-- Gallery item 1 -->
+                        <figure class="gallery-item" data-category="performances">
+                            <a href="assets/media/images/Solo Outside Photo.JPG" class="gallery-link" data-caption="Live performance at Newark venue, Summer 2024">
+                                <img src="assets/media/images/Solo Outside Photo.JPG" alt="AvarexNJ performing live on stage with microphone" class="gallery-image" width="300" height="200">
+                                <div class="image-overlay">
+                                    <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
                             </a>
-                            <p class="subscriber-count">Join 15K+ subscribers</p>
-                        </div>
+                            <figcaption class="image-caption">Newark Performance, 2024</figcaption>
+                        </figure>
 
-                        <!-- YouTube Playlists -->
-                        <div class="playlists-container">
-                            <h3 class="playlists-heading">Featured Playlists</h3>
-                            <div class="playlists-grid">
-                                <a href="https://www.youtube.com/playlist?list=avatuesday" class="playlist-item" target="_blank" rel="noopener">
-                                    <div class="playlist-thumbnail">
-                                        <img src="assets/videos/playlists/avatuesday.jpg" alt="AvaTuesday Freestyles playlist thumbnail" loading="lazy" width="240" height="135">
-                                        <span class="playlist-count">12 videos</span>
-                                    </div>
-                                    <h4 class="playlist-title">AvaTuesday Freestyles</h4>
-                                </a>
-
-                                <a href="https://www.youtube.com/playlist?list=officialvideos" class="playlist-item" target="_blank" rel="noopener">
-                                    <div class="playlist-thumbnail">
-                                        <img src="assets/videos/playlists/music-videos.jpg" alt="Official Music Videos playlist thumbnail" loading="lazy" width="240" height="135">
-                                        <span class="playlist-count">8 videos</span>
-                                    </div>
-                                    <h4 class="playlist-title">Official Music Videos</h4>
-                                </a>
-
-                                <a href="https://www.youtube.com/playlist?list=interviews" class="playlist-item" target="_blank" rel="noopener">
-                                    <div class="playlist-thumbnail">
-                                        <img src="assets/videos/playlists/interviews.jpg" alt="Interviews & Features playlist thumbnail" loading="lazy" width="240" height="135">
-                                        <span class="playlist-count">6 videos</span>
-                                    </div>
-                                    <h4 class="playlist-title">Interviews & Features</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Photo Gallery Section -->
-                <section id="gallery" class="gallery-section section">
-                    <div class="container">
-                        <h2 id="gallery-heading" class="section-heading">Photo Gallery</h2>
-
-                        <div class="gallery-filters">
-                            <button class="filter active" data-filter="all">All Photos</button>
-                            <button class="filter" data-filter="performances">Performances</button>
-                            <button class="filter" data-filter="studio">Studio Sessions</button>
-                            <button class="filter" data-filter="promo">Promotional</button>
-                        </div>
-
-                        <div class="carousel-container">
-                            <button class="carousel-button prev" aria-label="Previous image">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                            <div class="carousel-track">
-                                <!-- Gallery item 1 -->
-                                <figure class="gallery-item" data-category="performances">
-                                    <a href="assets/media/images/Solo Outside Photo.JPG" class="gallery-link" data-caption="Live performance at Newark venue, Summer 2024">
-                                        <img src="assets/media/images/Solo Outside Photo.JPG" alt="AvarexNJ performing live on stage with microphone" class="gallery-image" width="300" height="200">
-                                        <div class="image-overlay">
-                                            <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
-                                        </div>
-                                    </a>
-                                    <figcaption class="image-caption">Newark Performance, 2024</figcaption>
-                                </figure>
-
-                                <!-- Gallery item 2 -->
-                                <figure class="gallery-item" data-category="studio">
-                                    <a href="assets/media/images/Solo Recording Studio Photo.jpg" class="gallery-link" data-caption="Recording session for Ava Iverson album">
-                                        <img src="assets/media/images/Solo Recording Studio Photo.jpg" alt="AvarexNJ in recording studio with headphones" class="gallery-image" width="300" height="200">
-                                        <div class="image-overlay">
-                                            <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
-                                        </div>
-                                    </a>
-                                    <figcaption class="image-caption">Studio Session, Ava Iverson</figcaption>
-                                </figure>
-
-                                <!-- Gallery item 3 -->
-                                <figure class="gallery-item" data-category="promo">
-                                    <a href="assets/media/images/Ava Iverson Album Cover.png" class="gallery-link" data-caption="Album promo photoshoot, Respect Tha Artist">
-                                        <img src="assets/media/images/Ava Iverson Album Cover.png" alt="AvarexNJ promotional photoshoot with graffiti background" class="gallery-image" width="300" height="200">
-                                        <div class="image-overlay">
-                                            <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
-                                        </div>
-                                    </a>
-                                    <figcaption class="image-caption">Respect Tha Artist Promo</figcaption>
-                                </figure>
-
-                                <!-- Gallery item 4 -->
-                                <figure class="gallery-item" data-category="performances">
-                                    <a href="assets/media/images/Solo Outside Photo2.JPG" class="gallery-link" data-caption="Summer Jam performance with special guests">
-                                        <img src="assets/media/images/Solo Outside Photo2.JPG" alt="AvarexNJ performing at Summer Jam event" class="gallery-image" width="300" height="200">
-                                        <div class="image-overlay">
-                                            <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
-                                        </div>
-                                    </a>
-                                    <figcaption class="image-caption">Summer Jam, 2023</figcaption>
-                                </figure>
-
-                                <!-- Gallery item 5 -->
-                                <figure class="gallery-item" data-category="promo">
-                                    <a href="assets/media/images/Respect the Hustle Albulm Cover.jpg" class="gallery-link" data-caption="BossMan Time album promotional shoot">
-                                        <img src="assets/media/images/Respect the Hustle Albulm Cover.jpg" alt="AvarexNJ in formal attire for BossMan Time album" class="gallery-image" width="300" height="200">
-                                        <div class="image-overlay">
-                                            <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
-                                        </div>
-                                    </a>
-                                    <figcaption class="image-caption">BossMan Time Promo</figcaption>
-                                </figure>
-
-                                <!-- Gallery item 6 -->
-                                <figure class="gallery-item" data-category="studio">
-                                    <a href="assets/media/images/Studio Recording Photo2.jpg" class="gallery-link" data-caption="Working with producers on new tracks">
-                                        <img src="assets/media/images/Studio Recording Photo2.jpg" alt="AvarexNJ working with producers in studio" class="gallery-image" width="300" height="200">
-                                        <div class="image-overlay">
-                                            <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
-                                        </div>
-                                    </a>
-                                    <figcaption class="image-caption">Production Session, 2024</figcaption>
-                                </figure>
-                            </div>
-
-                            <button class="carousel-button next" aria-label="Next image">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                        </div>
-
-                        <div class="carousel-dots"></div>
-
-                        <!-- Lightbox component -->
-                        <div id="gallery-lightbox" class="lightbox" role="dialog" aria-hidden="true">
-                            <button class="lightbox-close" aria-label="Close lightbox">
-                        <i class="fas fa-times"></i>
-                    </button>
-                            <div class="lightbox-content">
-                                <img src="" alt="" class="lightbox-image">
-                                <p class="lightbox-caption"></p>
-                            </div>
-                            <button class="lightbox-prev" aria-label="Previous image">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                            <button class="lightbox-next" aria-label="Next image">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                        </div>
-                    </div>
-                </section>
-                <!-- Portfolio/Career Highlights Section -->
-                <section id="portfolio" class="portfolio-section section">
-                    <div class="container">
-                        <h2 id="portfolio-heading" class="section-heading">Career Highlights</h2>
-
-                        <div class="timeline-container">
-                            <div class="timeline-line" aria-hidden="true"></div>
-
-                            <!-- Timeline item 1 -->
-                            <article class="timeline-item">
-                                <div class="timeline-marker" aria-hidden="true"></div>
-                                <div class="timeline-content">
-                                    <time datetime="2024-01" class="timeline-date">January 2024</time>
-                                    <h3 class="milestone-title">Release of "Ava Iverson" Album</h3>
-                                    <div class="milestone-details">
-                                        <img src="assets/portfolio/ava-iverson-release.jpg" alt="Ava Iverson album promotional image" width="200" height="200">
-                                        <div class="milestone-description">
-                                            <p>Landmark release showcasing AvarexNJ's growth as an artist, featuring collaborations with notable producers and generating significant streaming numbers across platforms.</p>
-                                            <a href="#music" class="milestone-link">Listen to the album</a>
-                                        </div>
-                                    </div>
+                        <!-- Gallery item 2 -->
+                        <figure class="gallery-item" data-category="studio">
+                            <a href="assets/media/images/Solo Recording Studio Photo.jpg" class="gallery-link" data-caption="Recording session for Ava Iverson album">
+                                <img src="assets/media/images/Solo Recording Studio Photo.jpg" alt="AvarexNJ in recording studio with headphones" class="gallery-image" width="300" height="200">
+                                <div class="image-overlay">
+                                    <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
-                            </article>
-
-                            <!-- Timeline item 2 -->
-                            <article class="timeline-item">
-                                <div class="timeline-marker" aria-hidden="true"></div>
-                                <div class="timeline-content">
-                                    <time datetime="2023-06" class="timeline-date">June 2023</time>
-                                    <h3 class="milestone-title">"Respect Tha Artist" Album Launch</h3>
-                                    <div class="milestone-details">
-                                        <img src="assets/portfolio/respect-tha-artist-launch.jpg" alt="Respect Tha Artist album launch event" width="200" height="200">
-                                        <div class="milestone-description">
-                                            <p>Release of the breakthrough album "Respect Tha Artist" featuring AvarexNJ's unique New Jersey-influenced sound, receiving acclaim from fans and critics alike for its authentic representation of East Coast hip-hop.</p>
-                                            <a href="#music" class="milestone-link">Explore the album</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Timeline item 3 -->
-                            <article class="timeline-item">
-                                <div class="timeline-marker" aria-hidden="true"></div>
-                                <div class="timeline-content">
-                                    <time datetime="2023-02" class="timeline-date">February 2023</time>
-                                    <h3 class="milestone-title">"BossMan Time" EP Release</h3>
-                                    <div class="milestone-details">
-                                        <img src="assets/portfolio/bossman-time-release.jpg" alt="BossMan Time EP release promotional image" width="200" height="200">
-                                        <div class="milestone-description">
-                                            <p>The "BossMan Time" EP demonstrated AvarexNJ's versatility and production skills, featuring collaborations with notable East Coast producers and establishing his distinctive style.</p>
-                                            <a href="#music" class="milestone-link">Listen to the EP</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Timeline item 4 -->
-                            <article class="timeline-item">
-                                <div class="timeline-marker" aria-hidden="true"></div>
-                                <div class="timeline-content">
-                                    <time datetime="2022-09" class="timeline-date">September 2022</time>
-                                    <h3 class="milestone-title">Launch of AvaTuesday Freestyle Series</h3>
-                                    <div class="milestone-details">
-                                        <img src="assets/portfolio/avatuesday-launch.jpg" alt="AvaTuesday freestyle series launch" width="200" height="200">
-                                        <div class="milestone-description">
-                                            <p>Creation of the weekly "AvaTuesday" freestyle series, showcasing AvarexNJ's lyrical abilities and building a dedicated following through consistent content delivery on YouTube.</p>
-                                            <a href="#videos" class="milestone-link">Watch the series</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Timeline item 5 -->
-                            <article class="timeline-item">
-                                <div class="timeline-marker" aria-hidden="true"></div>
-                                <div class="timeline-content">
-                                    <time datetime="2022-04" class="timeline-date">April 2022</time>
-                                    <h3 class="milestone-title">"Future Millionaire" Album Release</h3>
-                                    <div class="milestone-details">
-                                        <img src="assets/portfolio/future-millionaire-release.jpg" alt="Future Millionaire album release" width="200" height="200">
-                                        <div class="milestone-description">
-                                            <p>AvarexNJ's "Future Millionaire" album showcased his growth as an artist and entrepreneur, focusing on themes of ambition and perseverance while representing New Jersey's unique hip-hop culture.</p>
-                                            <a href="#music" class="milestone-link">Explore the album</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- Timeline item 6 -->
-                            <article class="timeline-item">
-                                <div class="timeline-marker" aria-hidden="true"></div>
-                                <div class="timeline-content">
-                                    <time datetime="2021-10" class="timeline-date">October 2021</time>
-                                    <h3 class="milestone-title">Debut Album "Student 2 The Game"</h3>
-                                    <div class="milestone-details">
-                                        <img src="assets/portfolio/student-2-the-game-release.jpg" alt="Student 2 The Game debut album release" width="200" height="200">
-                                        <div class="milestone-description">
-                                            <p>AvarexNJ's debut album "Student 2 The Game" introduced his unique voice to the hip-hop landscape, establishing his New Jersey roots and commitment to authentic storytelling.</p>
-                                            <a href="#music" class="milestone-link">Listen to the debut</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <!-- Achievement Stats -->
-                        <div class="achievements-grid">
-                            <div class="achievement-card">
-                                <div class="achievement-icon">
-                                    <i class="fas fa-play-circle"></i>
-                                </div>
-                                <div class="achievement-stat">500K+</div>
-                                <div class="achievement-title">Total Streams</div>
-                            </div>
-
-                            <div class="achievement-card">
-                                <div class="achievement-icon">
-                                    <i class="fas fa-music"></i>
-                                </div>
-                                <div class="achievement-stat">5</div>
-                                <div class="achievement-title">Albums Released</div>
-                            </div>
-
-                            <div class="achievement-card">
-                                <div class="achievement-icon">
-                                    <i class="fas fa-microphone-alt"></i>
-                                </div>
-                                <div class="achievement-stat">20+</div>
-                                <div class="achievement-title">Live Performances</div>
-                            </div>
-
-                            <div class="achievement-card">
-                                <div class="achievement-icon">
-                                    <i class="fas fa-video"></i>
-                                </div>
-                                <div class="achievement-stat">15K+</div>
-                                <div class="achievement-title">YouTube Subscribers</div>
-                            </div>
-                        </div>
-
-                        <!-- Press Coverage -->
-                        <div class="press-section">
-                            <h3 class="press-heading">Media Coverage</h3>
-                            <div class="press-logos">
-                                <div class="press-logo">
-                                    <img src="assets/press/hot97-logo.png" alt="Hot 97 logo" width="120" height="60">
-                                </div>
-                                <div class="press-logo">
-                                    <img src="assets/press/complex-logo.png" alt="Complex logo" width="120" height="60">
-                                </div>
-                                <div class="press-logo">
-                                    <img src="assets/press/nj-com-logo.png" alt="NJ.com logo" width="120" height="60">
-                                </div>
-                                <div class="press-logo">
-                                    <img src="assets/press/power105-logo.png" alt="Power 105.1 logo" width="120" height="60">
-                                </div>
-                            </div>
-
-                            <div class="press-quote">
-                                <blockquote>
-                                    "AvarexNJ brings authentic New Jersey energy to hip-hop, with sharp lyrics and production that stands out in today's crowded landscape."
-                                </blockquote>
-                                <cite>— Hip-Hop Weekly</cite>
-                            </div>
-
-                            <a href="#" class="btn btn-primary press-kit-btn">
-                                <i class="fas fa-download"></i> Download Press Kit
                             </a>
+                            <figcaption class="image-caption">Studio Session, Ava Iverson</figcaption>
+                        </figure>
+
+                        <!-- Gallery item 3 -->
+                        <figure class="gallery-item" data-category="promo">
+                            <a href="assets/media/images/Ava Iverson Album Cover.png" class="gallery-link" data-caption="Album promo photoshoot, Respect Tha Artist">
+                                <img src="assets/media/images/Ava Iverson Album Cover.png" alt="AvarexNJ promotional photoshoot with graffiti background" class="gallery-image" width="300" height="200">
+                                <div class="image-overlay">
+                                    <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </a>
+                            <figcaption class="image-caption">Respect Tha Artist Promo</figcaption>
+                        </figure>
+
+                        <!-- Gallery item 4 -->
+                        <figure class="gallery-item" data-category="performances">
+                            <a href="assets/media/images/Solo Outside Photo2.JPG" class="gallery-link" data-caption="Summer Jam performance with special guests">
+                                <img src="assets/media/images/Solo Outside Photo2.JPG" alt="AvarexNJ performing at Summer Jam event" class="gallery-image" width="300" height="200">
+                                <div class="image-overlay">
+                                    <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </a>
+                            <figcaption class="image-caption">Summer Jam, 2023</figcaption>
+                        </figure>
+
+                        <!-- Gallery item 5 -->
+                        <figure class="gallery-item" data-category="promo">
+                            <a href="assets/media/images/Respect the Hustle Albulm Cover.jpg" class="gallery-link" data-caption="BossMan Time album promotional shoot">
+                                <img src="assets/media/images/Respect the Hustle Albulm Cover.jpg" alt="AvarexNJ in formal attire for BossMan Time album" class="gallery-image" width="300" height="200">
+                                <div class="image-overlay">
+                                    <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </a>
+                            <figcaption class="image-caption">BossMan Time Promo</figcaption>
+                        </figure>
+
+                        <!-- Gallery item 6 -->
+                        <figure class="gallery-item" data-category="studio">
+                            <a href="assets/media/images/Studio Recording Photo2.jpg" class="gallery-link" data-caption="Working with producers on new tracks">
+                                <img src="assets/media/images/Studio Recording Photo2.jpg" alt="AvarexNJ working with producers in studio" class="gallery-image" width="300" height="200">
+                                <div class="image-overlay">
+                                    <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </a>
+                            <figcaption class="image-caption">Production Session, 2024</figcaption>
+                        </figure>
+                    </div>
+
+                    <button class="carousel-button next" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+                </div>
+
+                <div class="carousel-dots"></div>
+
+                <!-- Lightbox component -->
+                <div id="gallery-lightbox" class="lightbox" role="dialog" aria-hidden="true">
+                    <button class="lightbox-close" aria-label="Close lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+                    <div class="lightbox-content">
+                        <img src="" alt="" class="lightbox-image">
+                        <p class="lightbox-caption"></p>
+                    </div>
+                    <button class="lightbox-prev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+                    <button class="lightbox-next" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio/Career Highlights Section -->
+        <section id="portfolio" class="portfolio-section section">
+            <div class="container">
+                <h2 id="portfolio-heading" class="section-heading">Career Highlights</h2>
+
+                <div class="timeline-container">
+                    <div class="timeline-line" aria-hidden="true"></div>
+
+                    <!-- Timeline item 1 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2024-01" class="timeline-date">January 2024</time>
+                            <h3 class="milestone-title">Release of "Ava Iverson" Album</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/ava-iverson-release.jpg" alt="Ava Iverson album promotional image" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>Landmark release showcasing AvarexNJ's growth as an artist, featuring collaborations with notable producers and generating significant streaming numbers across platforms.</p>
+                                    <a href="#music" class="milestone-link">Listen to the album</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Timeline item 2 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2023-06" class="timeline-date">June 2023</time>
+                            <h3 class="milestone-title">"Respect Tha Artist" Album Launch</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/respect-tha-artist-launch.jpg" alt="Respect Tha Artist album launch event" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>Release of the breakthrough album "Respect Tha Artist" featuring AvarexNJ's unique New Jersey-influenced sound, receiving acclaim from fans and critics alike for its authentic representation of East Coast hip-hop.</p>
+                                    <a href="#music" class="milestone-link">Explore the album</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Timeline item 3 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2023-02" class="timeline-date">February 2023</time>
+                            <h3 class="milestone-title">"BossMan Time" EP Release</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/bossman-time-release.jpg" alt="BossMan Time EP release promotional image" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>The "BossMan Time" EP demonstrated AvarexNJ's versatility and production skills, featuring collaborations with notable East Coast producers and establishing his distinctive style.</p>
+                                    <a href="#music" class="milestone-link">Listen to the EP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Timeline item 4 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2022-09" class="timeline-date">September 2022</time>
+                            <h3 class="milestone-title">Launch of AvaTuesday Freestyle Series</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/avatuesday-launch.jpg" alt="AvaTuesday freestyle series launch" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>Creation of the weekly "AvaTuesday" freestyle series, showcasing AvarexNJ's lyrical abilities and building a dedicated following through consistent content delivery on YouTube.</p>
+                                    <a href="#videos" class="milestone-link">Watch the series</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Timeline item 5 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2022-04" class="timeline-date">April 2022</time>
+                            <h3 class="milestone-title">"Future Millionaire" Album Release</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/future-millionaire-release.jpg" alt="Future Millionaire album release" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>AvarexNJ's "Future Millionaire" album showcased his growth as an artist and entrepreneur, focusing on themes of ambition and perseverance while representing New Jersey's unique hip-hop culture.</p>
+                                    <a href="#music" class="milestone-link">Explore the album</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Timeline item 6 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <time datetime="2021-10" class="timeline-date">October 2021</time>
+                            <h3 class="milestone-title">Debut Album "Student 2 The Game"</h3>
+                            <div class="milestone-details">
+                                <img src="assets/portfolio/student-2-the-game-release.jpg" alt="Student 2 The Game debut album release" width="200" height="200">
+                                <div class="milestone-description">
+                                    <p>AvarexNJ's debut album "Student 2 The Game" introduced his unique voice to the hip-hop landscape, establishing his New Jersey roots and commitment to authentic storytelling.</p>
+                                    <a href="#music" class="milestone-link">Listen to the debut</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Achievement Stats -->
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="achievement-stat">500K+</div>
+                        <div class="achievement-title">Total Streams</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="achievement-stat">5</div>
+                        <div class="achievement-title">Albums Released</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="achievement-stat">20+</div>
+                        <div class="achievement-title">Live Performances</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="achievement-stat">15K+</div>
+                        <div class="achievement-title">YouTube Subscribers</div>
+                    </div>
+                </div>
+
+                <!-- Press Coverage -->
+                <div class="press-section">
+                    <h3 class="press-heading">Media Coverage</h3>
+                    <div class="press-logos">
+                        <div class="press-logo">
+                            <img src="assets/press/hot97-logo.png" alt="Hot 97 logo" width="120" height="60">
+                        </div>
+                        <div class="press-logo">
+                            <img src="assets/press/complex-logo.png" alt="Complex logo" width="120" height="60">
+                        </div>
+                        <div class="press-logo">
+                            <img src="assets/press/nj-com-logo.png" alt="NJ.com logo" width="120" height="60">
+                        </div>
+                        <div class="press-logo">
+                            <img src="assets/press/power105-logo.png" alt="Power 105.1 logo" width="120" height="60">
                         </div>
                     </div>
-                </section>
 
-                <!-- Business Card / Connect Section -->
-                <section id="connect" class="business-card-section section">
-                    <div class="container">
-                        <h2 id="connect-heading" class="section-heading">Connect & Book</h2>
+                    <div class="press-quote">
+                        <blockquote>
+                            "AvarexNJ brings authentic New Jersey energy to hip-hop, with sharp lyrics and production that stands out in today's crowded landscape."
+                        </blockquote>
+                        <cite>— Hip-Hop Weekly</cite>
+                    </div>
 
-                        <div class="business-card">
-                            <div class="card-front">
-                                <div class="card-logo">
-                                    <img src="assets/brand/avarexnj-logo-large.png" alt="AvarexNJ official logo" width="400" height="120">
-                                    <p class="brand-tagline">NJ RAP ARTIST</p>
+                    <a href="#" class="btn btn-primary press-kit-btn">
+                        <i class="fas fa-download"></i> Download Press Kit
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Card / Connect Section -->
+        <section id="connect" class="business-card-section section">
+            <div class="container">
+                <h2 id="connect-heading" class="section-heading">Connect & Book</h2>
+
+                <div class="business-card">
+                    <div class="card-front">
+                        <div class="card-logo">
+                            <img src="assets/brand/avarexnj-logo-large.png" alt="AvarexNJ official logo" width="400" height="120">
+                            <p class="brand-tagline">NJ RAP ARTIST</p>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
+                                <div class="contact-text">
+                                    <p class="contact-label">TEXT:</p>
+                                    <p class="contact-value"><a href="tel:3476903209">(347) 690-3209</a></p>
                                 </div>
+                            </div>
 
-                                <div class="contact-details">
-                                    <div class="contact-item">
-                                        <span class="contact-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
-                                        <div class="contact-text">
-                                            <p class="contact-label">TEXT:</p>
-                                            <p class="contact-value"><a href="tel:3476903209">(347) 690-3209</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="contact-item">
-                                        <span class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
-                                        <div class="contact-text">
-                                            <p class="contact-purpose">for bookings, features & business</p>
-                                            <p class="contact-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="qr-container">
-                                        <p class="qr-label">FOLLOW ME:</p>
-                                        <img src="assets/contact/qr-code.png" alt="QR code to follow AvarexNJ" width="150" height="150">
-                                    </div>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                                <div class="contact-text">
+                                    <p class="contact-purpose">for bookings, features & business</p>
+                                    <p class="contact-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
                                 </div>
+                            </div>
 
-                                <div class="nj-map-background" aria-hidden="true"></div>
+                            <div class="qr-container">
+                                <p class="qr-label">FOLLOW ME:</p>
+                                <img src="assets/contact/qr-code.png" alt="QR code to follow AvarexNJ" width="150" height="150">
                             </div>
                         </div>
 
-                        <div class="social-connections">
-                            <h3 class="social-heading">Follow on Social Media</h3>
-                            <div class="social-icons">
-                                <a href="https://youtube.com/avarextv" class="social-icon youtube" target="_blank" rel="noopener" aria-label="Follow on YouTube">
+                        <div class="nj-map-background" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <div class="social-connections">
+                    <h3 class="social-heading">Follow on Social Media</h3>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/avarextv" class="social-icon youtube" target="_blank" rel="noopener" aria-label="Follow on YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span class="social-handle">AvaTv</span>
+                        </a>
+                        <a href="https://instagram.com/avarexnj" class="social-icon instagram" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-handle">@avarexnj</span>
+                        </a>
+                        <a href="https://twitter.com/avarexnj" class="social-icon twitter" target="_blank" rel="noopener" aria-label="Follow on Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-handle">@avarexnj</span>
+                        </a>
+                        <a href="https://tiktok.com/@avarexnj" class="social-icon tiktok" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <i class="fab fa-tiktok"></i>
+                            <span class="social-handle">@avarexnj</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-container">
+                    <h3 class="booking-form-heading">Book AvarexNJ</h3>
+                    <form class="booking-form" action="/submit-booking" method="POST" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="booking-name" name="name" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="booking-email">Email <span class="required">*</span></label>
+                                <input type="email" id="booking-email" name="email" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="booking-phone" name="phone" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="booking-type">Booking Type <span class="required">*</span></label>
+                                <select id="booking-type" name="type" required aria-required="true">
+                            <option value="">Select booking type</option>
+                            <option value="performance">Live Performance</option>
+                            <option value="feature">Feature/Collaboration</option>
+                            <option value="interview">Interview/Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-event-date">Event Date</label>
+                            <input type="date" id="booking-event-date" name="event-date">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-details">Event Details <span class="required">*</span></label>
+                            <textarea id="booking-details" name="details" rows="5" required aria-required="true" placeholder="Please provide details about your event, venue, budget, and any specific requirements"></textarea>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                        Submit Booking Request
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-heading">Contact</h2>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3 class="contact-info-heading">Get In Touch</h3>
+                        <p class="contact-description">Have questions, feedback, or want to collaborate? Reach out to AvarexNJ directly through any of the channels below.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-title">Text</h4>
+                                    <p class="method-value"><a href="tel:3476903209">(347) 690-3209</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-title">Email</h4>
+                                    <p class="method-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
                                     <i class="fab fa-youtube"></i>
-                                    <span class="social-handle">AvaTv</span>
-                                </a>
-                                <a href="https://instagram.com/avarexnj" class="social-icon instagram" target="_blank" rel="noopener" aria-label="Follow on Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    <span class="social-handle">@avarexnj</span>
-                                </a>
-                                <a href="https://twitter.com/avarexnj" class="social-icon twitter" target="_blank" rel="noopener" aria-label="Follow on Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    <span class="social-handle">@avarexnj</span>
-                                </a>
-                                <a href="https://tiktok.com/@avarexnj" class="social-icon tiktok" target="_blank" rel="noopener" aria-label="Follow on TikTok">
-                                    <i class="fab fa-tiktok"></i>
-                                    <span class="social-handle">@avarexnj</span>
-                                </a>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-title">YouTube</h4>
+                                    <p class="method-value"><a href="https://youtube.com/avarextv" target="_blank" rel="noopener">youtube.com/avarextv</a></p>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Booking Form -->
-                        <div class="booking-form-container">
-                            <h3 class="booking-form-heading">Book AvarexNJ</h3>
-                            <form class="booking-form" action="/submit-booking" method="POST" novalidate>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="booking-name">Your Name <span class="required">*</span></label>
-                                        <input type="text" id="booking-name" name="name" required aria-required="true">
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="booking-email">Email <span class="required">*</span></label>
-                                        <input type="email" id="booking-email" name="email" required aria-required="true">
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="booking-phone">Phone Number <span class="required">*</span></label>
-                                        <input type="tel" id="booking-phone" name="phone" required aria-required="true">
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="booking-type">Booking Type <span class="required">*</span></label>
-                                        <select id="booking-type" name="type" required aria-required="true">
-                                    <option value="">Select booking type</option>
-                                    <option value="performance">Live Performance</option>
-                                    <option value="feature">Feature/Collaboration</option>
-                                    <option value="interview">Interview/Media</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="booking-event-date">Event Date</label>
-                                    <input type="date" id="booking-event-date" name="event-date">
-                                    <span class="form-error" aria-live="polite"></span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="booking-details">Event Details <span class="required">*</span></label>
-                                    <textarea id="booking-details" name="details" rows="5" required aria-required="true" placeholder="Please provide details about your event, venue, budget, and any specific requirements"></textarea>
-                                    <span class="form-error" aria-live="polite"></span>
-                                </div>
-
-                                <div class="form-actions">
-                                    <button type="submit" class="btn btn-primary btn-lg">
-                                Submit Booking Request
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                                </div>
-                            </form>
+                        <div class="location-info">
+                            <h4 class="location-title">Based In</h4>
+                            <p class="location-value">New Jersey, USA</p>
+                            <p class="location-description">Available for bookings nationwide and international events.</p>
                         </div>
                     </div>
-                </section>
 
-                <!-- Contact Section -->
-                <section id="contact" class="contact-section section">
-                    <div class="container">
-                        <h2 class="section-heading">Contact</h2>
-
-                        <div class="contact-container">
-                            <div class="contact-info">
-                                <h3 class="contact-info-heading">Get In Touch</h3>
-                                <p class="contact-description">Have questions, feedback, or want to collaborate? Reach out to AvarexNJ directly through any of the channels below.</p>
-
-                                <div class="contact-methods">
-                                    <div class="contact-method">
-                                        <div class="method-icon">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <div class="method-details">
-                                            <h4 class="method-title">Text</h4>
-                                            <p class="method-value"><a href="tel:3476903209">(347) 690-3209</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="contact-method">
-                                        <div class="method-icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div class="method-details">
-                                            <h4 class="method-title">Email</h4>
-                                            <p class="method-value"><a href="mailto:avarex201@gmail.com">avarex201@gmail.com</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="contact-method">
-                                        <div class="method-icon">
-                                            <i class="fab fa-youtube"></i>
-                                        </div>
-                                        <div class="method-details">
-                                            <h4 class="method-title">YouTube</h4>
-                                            <p class="method-value"><a href="https://youtube.com/avarextv" target="_blank" rel="noopener">youtube.com/avarextv</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="location-info">
-                                    <h4 class="location-title">Based In</h4>
-                                    <p class="location-value">New Jersey, USA</p>
-                                    <p class="location-description">Available for bookings nationwide and international events.</p>
-                                </div>
+                    <div class="contact-form-container">
+                        <h3 class="contact-form-heading">Send A Message</h3>
+                        <form class="contact-form" action="/submit-contact" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="name" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
                             </div>
 
-                            <div class="contact-form-container">
-                                <h3 class="contact-form-heading">Send A Message</h3>
-                                <form class="contact-form" action="/submit-contact" method="POST" novalidate>
-                                    <div class="form-group">
-                                        <label for="contact-name">Your Name <span class="required">*</span></label>
-                                        <input type="text" id="contact-name" name="name" required aria-required="true">
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="contact-email">Email Address <span class="required">*</span></label>
-                                        <input type="email" id="contact-email" name="email" required aria-required="true">
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="contact-subject">Subject <span class="required">*</span></label>
-                                        <input type="text" id="contact-subject" name="subject" required aria-required="true">
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="contact-message">Your Message <span class="required">*</span></label>
-                                        <textarea id="contact-message" name="message" rows="5" required aria-required="true"></textarea>
-                                        <span class="form-error" aria-live="polite"></span>
-                                    </div>
-
-                                    <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary">
-                                    Send Message
-                                    <i class="fas fa-paper-plane"></i>
-                                </button>
-                                    </div>
-                                </form>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="contact-email" name="email" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
                             </div>
-                        </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="contact-subject" name="subject" required aria-required="true">
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Your Message <span class="required">*</span></label>
+                                <textarea id="contact-message" name="message" rows="5" required aria-required="true"></textarea>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                            </div>
+                        </form>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
