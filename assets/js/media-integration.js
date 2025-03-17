@@ -174,4 +174,53 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Play Button Setup
+    const playButtons = document.querySelectorAll('.play-button');
+    let currentAudio = null;
+
+    playButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const audioSrc = this.getAttribute('data-audio');
+            if (!audioSrc) return;
+
+            // Create or reuse audio element
+            if (!currentAudio) {
+                currentAudio = new Audio();
+                currentAudio.addEventListener('play', function() {
+                    // Update all play buttons to show play icon
+                    playButtons.forEach(btn => {
+                        btn.querySelector('i').classList.remove('fa-pause');
+                        btn.querySelector('i').classList.add('fa-play');
+                    });
+                    // Update clicked button to show pause icon
+                    button.querySelector('i').classList.remove('fa-play');
+                    button.querySelector('i').classList.add('fa-pause');
+                });
+                currentAudio.addEventListener('pause', function() {
+                    // Update all play buttons to show play icon
+                    playButtons.forEach(btn => {
+                        btn.querySelector('i').classList.remove('fa-pause');
+                        btn.querySelector('i').classList.add('fa-play');
+                    });
+                });
+            }
+
+            // If clicking the same button that's currently playing, pause
+            if (currentAudio.src === audioSrc && !currentAudio.paused) {
+                currentAudio.pause();
+                return;
+            }
+
+            // Stop current audio if playing something else
+            if (currentAudio.src && currentAudio.src !== audioSrc) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            // Set new audio source and play
+            currentAudio.src = audioSrc;
+            currentAudio.play();
+        });
+    });
 });
