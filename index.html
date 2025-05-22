@@ -430,6 +430,18 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+
+        .hero-section .btn-outline {
+            color: white;
+            border-color: white;
+        }
+
+        .hero-section .btn-outline:hover,
+        .hero-section .btn-outline:focus {
+            background-color: var(--color-accent); /* Accent color on hover as per previous subtask general theme */
+            color: white;
+            border-color: var(--color-accent);
+        }
         /* Latest release section */
         
         .latest-release {
@@ -619,6 +631,14 @@
         
         .news-content {
             padding: var(--spacing-medium);
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allows content to fill card if card itself is flex */
+        }
+
+        .news-content .btn {
+            margin-top: auto; /* Pushes button to the bottom */
+            align-self: flex-start; /* Keeps button from stretching full-width if news-content is align-items: stretch */
         }
         
         .news-date {
@@ -1138,6 +1158,8 @@
             overflow: hidden;
             box-shadow: var(--box-shadow);
             transition: var(--transition-base);
+            display: flex; /* Added to make news-card a flex container */
+            flex-direction: column; /* Stacks children (image, content) vertically */
         }
         
         .video-item:hover {
@@ -2215,6 +2237,13 @@
         .footer-stream-link:hover img {
             transform: scale(1.1);
         }
+
+        .footer-stream-link i { /* For SoundCloud icon consistency */
+            margin-right: 8px;
+            width: 20px; /* Approximate width of other icons */
+            text-align: center; /* Center icon if it's narrower */
+            display: inline-block; /* Ensure width is respected */
+        }
     </style>
 </head>
 
@@ -2809,7 +2838,7 @@
                             <time datetime="2024-01" class="timeline-date">January 2024</time>
                             <h3 class="milestone-title">Release of "Ava Iverson" Album</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/ava-iverson-release.jpg" alt="Ava Iverson album promotional image" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Ava Iverson Album Cover.webp" alt="Ava Iverson album promotional image" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>Landmark release showcasing AvarexNJ's growth as an artist, featuring collaborations with notable producers and generating significant streaming numbers across platforms.</p>
                                     <a href="#music" class="milestone-link">Listen to the album</a>
@@ -2825,7 +2854,7 @@
                             <time datetime="2023-06" class="timeline-date">June 2023</time>
                             <h3 class="milestone-title">"Respect Tha Artist" Album Launch</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/respect-tha-artist-launch.jpg" alt="Respect Tha Artist album launch event" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.webp" alt="Respect Tha Artist album launch event" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>Release of the breakthrough album "Respect Tha Artist" featuring AvarexNJ's unique New Jersey-influenced sound, receiving acclaim from fans and critics alike for its authentic representation of East Coast hip-hop.</p>
                                     <a href="#music" class="milestone-link">Explore the album</a>
@@ -2841,7 +2870,7 @@
                             <time datetime="2023-02" class="timeline-date">February 2023</time>
                             <h3 class="milestone-title">"BossMan Time" EP Release</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/bossman-time-release.jpg" alt="BossMan Time EP release promotional image" width="200" height="200">
+                                <!-- IMAGE NOT FOUND: assets/portfolio/bossman-time-release.jpg --> <img src="assets/portfolio/bossman-time-release.jpg" alt="BossMan Time EP release promotional image" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>The "BossMan Time" EP demonstrated AvarexNJ's versatility and production skills, featuring collaborations with notable East Coast producers and establishing his distinctive style.</p>
                                     <a href="#music" class="milestone-link">Listen to the EP</a>
@@ -2857,7 +2886,7 @@
                             <time datetime="2022-09" class="timeline-date">September 2022</time>
                             <h3 class="milestone-title">Launch of AvaTuesday Freestyle Series</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/avatuesday-launch.jpg" alt="AvaTuesday freestyle series launch" width="200" height="200">
+                                <!-- IMAGE NOT FOUND: assets/portfolio/avatuesday-launch.jpg --> <img src="assets/portfolio/avatuesday-launch.jpg" alt="AvaTuesday freestyle series launch" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>Creation of the weekly "AvaTuesday" freestyle series, showcasing AvarexNJ's lyrical abilities and building a dedicated following through consistent content delivery on YouTube.</p>
                                     <a href="#videos" class="milestone-link">Watch the series</a>
@@ -2873,7 +2902,7 @@
                             <time datetime="2022-04" class="timeline-date">April 2022</time>
                             <h3 class="milestone-title">"Future Millionaire" Album Release</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/future-millionaire-release.jpg" alt="Future Millionaire album release" width="200" height="200">
+                                <!-- IMAGE NOT FOUND: assets/portfolio/future-millionaire-release.jpg --> <img src="assets/portfolio/future-millionaire-release.jpg" alt="Future Millionaire album release" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>AvarexNJ's "Future Millionaire" album showcased his growth as an artist and entrepreneur, focusing on themes of ambition and perseverance while representing New Jersey's unique hip-hop culture.</p>
                                     <a href="#music" class="milestone-link">Explore the album</a>
@@ -2889,7 +2918,7 @@
                             <time datetime="2021-10" class="timeline-date">October 2021</time>
                             <h3 class="milestone-title">Debut Album "Student 2 The Game"</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/student-2-the-game-release.jpg" alt="Student 2 The Game debut album release" width="200" height="200">
+                                <!-- IMAGE NOT FOUND: assets/portfolio/student-2-the-game-release.jpg --> <img src="assets/portfolio/student-2-the-game-release.jpg" alt="Student 2 The Game debut album release" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>AvarexNJ's debut album "Student 2 The Game" introduced his unique voice to the hip-hop landscape, establishing his New Jersey roots and commitment to authentic storytelling.</p>
                                     <a href="#music" class="milestone-link">Listen to the debut</a>
