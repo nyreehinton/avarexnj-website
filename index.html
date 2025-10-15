@@ -12,11 +12,8 @@
     <meta name="author" content="AvarexNJ">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="icon" type="image/png" href="assets/media/icons/optimized/AVAREXNJ Logo desgin.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/icons/optimized/AVAREXNJ Logo desgin.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -40,8 +37,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="assets/fonts/montserrat-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/images/avarexnj-logo.png" as="image">
+    <link rel="preload" href="assets/media/icons/optimized/AVAREXNJ Logo desgin.png" as="image">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -376,7 +372,7 @@
         .skip-link:focus {
             top: 0;
         }
-        /* Hero section */
+        /* Hero section with Morphing Animation */
         
         .hero-section {
             position: relative;
@@ -391,6 +387,456 @@
             display: flex;
             align-items: center;
             text-align: center;
+            overflow: hidden;
+        }
+        /* Sketch Animation Container */
+        
+        .sketch-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .sketch-svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 1200px;
+            max-height: 600px;
+        }
+        /* Sketch Lines - Emergence Phase */
+        
+        .sketch-lines {
+            opacity: 0;
+            animation: sketch-emergence 2s ease-in-out 0s forwards;
+        }
+        
+        .sketch-line {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            opacity: 0;
+            filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+        }
+        /* Staggered line animations */
+        
+        .sketch-line-1 {
+            animation: line-draw 0.8s ease-in-out 0.1s forwards, line-glow 2s ease-in-out 0.1s infinite;
+        }
+        
+        .sketch-line-2 {
+            animation: line-draw 0.8s ease-in-out 0.2s forwards, line-glow 2s ease-in-out 0.2s infinite;
+        }
+        
+        .sketch-line-3 {
+            animation: line-draw 0.8s ease-in-out 0.3s forwards, line-glow 2s ease-in-out 0.3s infinite;
+        }
+        
+        .sketch-line-4 {
+            animation: line-draw 0.8s ease-in-out 0.4s forwards, line-glow 2s ease-in-out 0.4s infinite;
+        }
+        
+        .sketch-line-5 {
+            animation: line-draw 0.8s ease-in-out 0.5s forwards, line-glow 2s ease-in-out 0.5s infinite;
+        }
+        
+        .sketch-line-6 {
+            animation: line-draw 0.8s ease-in-out 0.6s forwards, line-glow 2s ease-in-out 0.6s infinite;
+        }
+        
+        .sketch-line-7 {
+            animation: line-draw 0.8s ease-in-out 0.7s forwards, line-glow 2s ease-in-out 0.7s infinite;
+        }
+        
+        .sketch-line-8 {
+            animation: line-draw 0.8s ease-in-out 0.8s forwards, line-glow 2s ease-in-out 0.8s infinite;
+        }
+        
+        .sketch-line-9 {
+            animation: line-draw 0.8s ease-in-out 0.9s forwards, line-glow 2s ease-in-out 0.9s infinite;
+        }
+        
+        .sketch-line-10 {
+            animation: line-draw 0.8s ease-in-out 1.0s forwards, line-glow 2s ease-in-out 1.0s infinite;
+        }
+        
+        .sketch-line-11 {
+            animation: line-draw 0.8s ease-in-out 1.1s forwards, line-glow 2s ease-in-out 1.1s infinite;
+        }
+        
+        .sketch-line-12 {
+            animation: line-draw 0.8s ease-in-out 1.2s forwards, line-glow 2s ease-in-out 1.2s infinite;
+        }
+        
+        .sketch-line-13 {
+            animation: line-draw 0.8s ease-in-out 1.3s forwards, line-glow 2s ease-in-out 1.3s infinite;
+        }
+        
+        .sketch-line-14 {
+            animation: line-draw 0.8s ease-in-out 1.4s forwards, line-glow 2s ease-in-out 1.4s infinite;
+        }
+        
+        .sketch-line-15 {
+            animation: line-draw 0.8s ease-in-out 1.5s forwards, line-glow 2s ease-in-out 1.5s infinite;
+        }
+        
+        .sketch-line-16 {
+            animation: line-draw 0.8s ease-in-out 1.6s forwards, line-glow 2s ease-in-out 1.6s infinite;
+        }
+        /* Morphing Particles */
+        
+        .morph-particles {
+            opacity: 0;
+            animation: particles-appear 2s ease-in-out 2s forwards, particles-dissolve 2s ease-in-out 4s forwards;
+        }
+        
+        .particle {
+            opacity: 0;
+            animation: particle-float 4s ease-in-out infinite;
+        }
+        
+        .particle-1 {
+            animation-delay: 0.1s;
+        }
+        
+        .particle-2 {
+            animation-delay: 0.3s;
+        }
+        
+        .particle-3 {
+            animation-delay: 0.5s;
+        }
+        
+        .particle-4 {
+            animation-delay: 0.7s;
+        }
+        
+        .particle-5 {
+            animation-delay: 0.9s;
+        }
+        /* Morphing Text Container */
+        
+        .morphing-text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            opacity: 0;
+            animation: text-formation 2s ease-in-out 4s forwards;
+        }
+        
+        .morphing-text {
+            font-size: 3rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+            position: relative;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: text-solidify 2s ease-in-out 4s forwards, text-pulse 4s ease-in-out 6s infinite;
+        }
+        
+        .text-char {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px) rotateX(90deg);
+            transition: all 0.3s ease;
+        }
+        /* Staggered character reveal */
+        
+        .text-char:nth-child(1) {
+            animation: char-reveal 0.8s ease-in-out 4.2s forwards;
+        }
+        
+        .text-char:nth-child(2) {
+            animation: char-reveal 0.8s ease-in-out 4.4s forwards;
+        }
+        
+        .text-char:nth-child(3) {
+            animation: char-reveal 0.8s ease-in-out 4.6s forwards;
+        }
+        
+        .text-char:nth-child(4) {
+            animation: char-reveal 0.8s ease-in-out 4.8s forwards;
+        }
+        
+        .text-char:nth-child(5) {
+            animation: char-reveal 0.8s ease-in-out 5.0s forwards;
+        }
+        
+        .text-char:nth-child(6) {
+            animation: char-reveal 0.8s ease-in-out 5.2s forwards;
+        }
+        
+        .text-char:nth-child(7) {
+            animation: char-reveal 0.8s ease-in-out 5.4s forwards;
+        }
+        
+        .text-char:nth-child(8) {
+            animation: char-reveal 0.8s ease-in-out 5.6s forwards;
+        }
+        /* Morphing Subtitle */
+        
+        .morphing-subtitle {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: subtitle-appear 1s ease-in-out 6s forwards;
+        }
+        /* Hero CTA Buttons */
+        
+        .hero-cta {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: cta-appear 1s ease-in-out 7s forwards;
+        }
+        
+        .hero-cta:nth-child(1) {
+            animation-delay: 7.2s;
+        }
+        
+        .hero-cta:nth-child(2) {
+            animation-delay: 7.4s;
+        }
+        /* Hover Interactions */
+        
+        .hero-section:hover .sketch-line {
+            filter: drop-shadow(0 0 8px rgba(217, 33, 34, 0.6));
+            transition: filter 0.3s ease;
+        }
+        
+        .hero-section:hover .morphing-text {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            transition: text-shadow 0.3s ease;
+        }
+        /* Keyframe Animations */
+        /* Emergence Phase */
+        
+        @keyframes sketch-emergence {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes line-draw {
+            0% {
+                stroke-dashoffset: 100;
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                stroke-dashoffset: 0;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes line-glow {
+            0%,
+            100% {
+                filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+            }
+            50% {
+                filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+            }
+        }
+        /* Morphing Phase */
+        
+        @keyframes particles-appear {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0.6;
+            }
+        }
+        
+        @keyframes particles-dissolve {
+            0% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes particle-float {
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-20px) scale(1.2);
+                opacity: 0.4;
+            }
+        }
+        /* Formation Phase */
+        
+        @keyframes text-formation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes text-solidify {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+                filter: blur(10px);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.05);
+                filter: blur(2px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                filter: blur(0);
+            }
+        }
+        
+        @keyframes char-reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) rotateX(90deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) rotateX(0deg);
+            }
+        }
+        /* Stabilization Phase */
+        
+        @keyframes text-pulse {
+            0%,
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(217, 33, 34, 0.2);
+            }
+        }
+        
+        @keyframes subtitle-appear {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes cta-appear {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Reduced Motion Support */
+        
+        @media (prefers-reduced-motion: reduce) {
+            .sketch-lines,
+            .morph-particles,
+            .morphing-text,
+            .text-char,
+            .morphing-subtitle,
+            .hero-cta {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            .sketch-line {
+                stroke-dashoffset: 0 !important;
+                opacity: 1 !important;
+            }
+            .morphing-text-container {
+                opacity: 1 !important;
+            }
+        }
+        /* Low power mode optimizations */
+        
+        .low-power-mode .sketch-line {
+            animation-duration: 1.5s !important;
+        }
+        
+        .low-power-mode .particle {
+            display: none;
+        }
+        
+        .low-power-mode .morphing-text {
+            animation-duration: 1s !important;
+        }
+        /* Mobile Responsive Design for Morphing Animation */
+        
+        @media (max-width: 767px) {
+            .sketch-svg {
+                max-width: 90vw;
+                max-height: 40vh;
+            }
+            .morphing-text {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+            .text-char {
+                transform: translateY(10px) rotateX(45deg);
+            }
+            /* Adjust character reveal animation for mobile */
+            @keyframes char-reveal {
+                0% {
+                    opacity: 0;
+                    transform: translateY(10px) rotateX(45deg);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) rotateX(0deg);
+                }
+            }
+            /* Reduce particle count on mobile for performance */
+            .particle:nth-child(n+4) {
+                display: none;
+            }
+            /* Adjust sketch line positioning for mobile */
+            .sketch-lines {
+                transform: scale(0.8);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .morphing-text {
+                font-size: 4rem;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .morphing-text {
+                font-size: 5rem;
+                letter-spacing: 3px;
+            }
         }
         
         .hero-overlay {
@@ -1457,17 +1903,29 @@
             margin-bottom: var(--spacing-large);
         }
         
-        .press-logo img {
-            max-width: 100%;
-            height: auto;
-            filter: grayscale(1);
-            opacity: 0.7;
+        .press-logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-small) var(--spacing-large);
+            min-width: 140px;
+            min-height: 60px;
+            border-radius: calc(var(--border-radius) * 2);
+            background-color: white;
+            color: var(--color-text);
+            font-family: var(--font-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             transition: var(--transition-base);
         }
         
-        .press-logo:hover img {
-            filter: grayscale(0);
-            opacity: 1;
+        .press-logo:hover {
+            transform: translateY(-3px);
+            color: var(--color-accent);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
         }
         
         .press-quote {
@@ -2228,7 +2686,7 @@
             <!-- Logo container with alt text -->
             <div class="logo-container">
                 <a href="index.html" aria-label="AvarexNJ homepage">
-                    <img src="assets/images/avarexnj-logo.png" alt="AvarexNJ Logo showing NJ RAP ARTIST text with airplane emblem" width="250" height="80">
+                    <img src="assets/media/icons/optimized/AVAREXNJ Logo desgin.png" alt="AvarexNJ Logo showing NJ RAP ARTIST text with airplane emblem" width="250" height="80">
                 </a>
             </div>
 
@@ -2268,18 +2726,83 @@
 
     <!-- Main content -->
     <main id="main-content" tabindex="-1">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
+        <!-- Hero Section with Morphing Sketch-to-Text Animation -->
+        <section id="home" class="hero-section" aria-label="Hero section with animated text reveal">
             <div class="hero-overlay"></div>
+
+            <!-- Sketch Animation Container -->
+            <div class="sketch-container" aria-hidden="true">
+                <!-- Initial sketch lines that will morph into text -->
+                <svg class="sketch-svg" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Sketch lines that will emerge and morph -->
+                    <g class="sketch-lines">
+                        <!-- Lines for "A" -->
+                        <path class="sketch-line sketch-line-1" d="M150,200 L180,150 L210,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-2" d="M170,170 L190,190" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "V" -->
+                        <path class="sketch-line sketch-line-3" d="M250,150 L280,200 L310,150" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "A" -->
+                        <path class="sketch-line sketch-line-4" d="M350,200 L380,150 L410,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-5" d="M370,170 L390,190" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "R" -->
+                        <path class="sketch-line sketch-line-6" d="M450,150 L450,200 L480,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-7" d="M480,150 L480,175 L450,175" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-8" d="M465,175 L480,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "E" -->
+                        <path class="sketch-line sketch-line-9" d="M520,150 L520,200 L550,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-10" d="M520,150 L550,150" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-11" d="M520,175 L545,175" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "X" -->
+                        <path class="sketch-line sketch-line-12" d="M590,150 L620,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-13" d="M620,150 L590,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "N" -->
+                        <path class="sketch-line sketch-line-14" d="M660,200 L660,150 L690,200 L690,150" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+                        <!-- Lines for "J" -->
+                        <path class="sketch-line sketch-line-15" d="M730,150 L760,150 L760,200 L750,200" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path class="sketch-line sketch-line-16" d="M740,210 L750,210" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                    </g>
+
+                    <!-- Particle effects for morphing phase -->
+                    <g class="morph-particles">
+                        <circle class="particle particle-1" cx="200" cy="180" r="2" fill="#CCCCCC"/>
+                        <circle class="particle particle-2" cx="400" cy="160" r="2" fill="#CCCCCC"/>
+                        <circle class="particle particle-3" cx="600" cy="190" r="2" fill="#CCCCCC"/>
+                        <circle class="particle particle-4" cx="350" cy="170" r="2" fill="#CCCCCC"/>
+                        <circle class="particle particle-5" cx="550" cy="180" r="2" fill="#CCCCCC"/>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Morphing Text Container -->
+            <div class="morphing-text-container">
+                <h1 class="hero-title morphing-text" data-text="AvarexNJ">
+                    <span class="text-char" data-char="A">A</span>
+                    <span class="text-char" data-char="v">v</span>
+                    <span class="text-char" data-char="a">a</span>
+                    <span class="text-char" data-char="r">r</span>
+                    <span class="text-char" data-char="e">e</span>
+                    <span class="text-char" data-char="x">x</span>
+                    <span class="text-char" data-char="N">N</span>
+                    <span class="text-char" data-char="J">J</span>
+                </h1>
+            </div>
+
+            <!-- Hero Content -->
             <div class="hero-content container">
-                <h1 class="hero-title">AvarexNJ</h1>
-                <p class="hero-subtitle">New Jersey's rising hip-hop artist bringing authentic sounds and powerful lyrics</p>
+                <p class="hero-subtitle morphing-subtitle">New Jersey's rising hip-hop artist bringing authentic sounds and powerful lyrics</p>
                 <div class="hero-buttons">
-                    <a href="#music" class="btn btn-accent">
+                    <a href="#music" class="btn btn-accent hero-cta">
                         <i class="fas fa-play" aria-hidden="true"></i>
                         <span class="btn-text">Listen Now</span>
                     </a>
-                    <a href="#connect" class="btn btn-outline">
+                    <a href="#connect" class="btn btn-outline hero-cta">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                         <span class="btn-text">Book & Connect</span>
                     </a>
@@ -2323,7 +2846,7 @@
                             <a href="https://music.apple.com/album/ava-iverson" class="streaming-button" target="_blank" rel="noopener">
                                 <picture>
                                     <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
-                                    <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
+                                    <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24" loading="lazy">
                                 </picture>
                                 <span>Listen on Apple Music</span>
                             </a>
@@ -2355,7 +2878,7 @@
                 <div class="news-grid">
                     <!-- News Item 1 -->
                     <article class="news-card">
-                        <img src="assets/media/images/Solo Outside Photo.JPG" alt="AvarexNJ performing at Newark venue" class="news-image">
+                        <img src="assets/media/images/optimized/full/Solo Outside Photo.jpg" alt="AvarexNJ performing at Newark venue" class="news-image">
                         <div class="news-content">
                             <time datetime="2025-03-15" class="news-date">March 15, 2025</time>
                             <h3 class="news-title">Upcoming Newark Performance</h3>
@@ -2421,7 +2944,7 @@
                                     <a href="https://music.apple.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Apple Music" class="platform-link">
                                         <picture>
                                             <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
-                                            <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
+                                            <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24" loading="lazy">
                                         </picture>
                                     </a>
                                     <a href="https://open.spotify.com/album/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Spotify" class="platform-link">
@@ -2438,10 +2961,10 @@
                         <article class="music-item">
                             <div class="music-item-artwork">
                                 <picture>
-                                    <source srcset="assets/media/images/optimized/thumbnails/Respect Tha Artist Album Cover.webp" type="image/webp" media="(max-width: 767px)">
-                                    <source srcset="assets/media/images/optimized/full/Respect Tha Artist Album Cover.webp" type="image/webp">
-                                    <source srcset="assets/media/images/optimized/thumbnails/Respect Tha Artist Album Cover.jpg" type="image/jpeg" media="(max-width: 767px)">
-                                    <img src="assets/media/images/optimized/full/Respect Tha Artist Album Cover.jpg" alt="Respect Tha Artist album cover" loading="lazy" width="300" height="300">
+                                    <source srcset="assets/media/images/optimized/thumbnails/Respect the Hustle Albulm Cover.webp" type="image/webp" media="(max-width: 767px)">
+                                    <source srcset="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.webp" type="image/webp">
+                                    <source srcset="assets/media/images/optimized/thumbnails/Respect the Hustle Albulm Cover.jpg" type="image/jpeg" media="(max-width: 767px)">
+                                    <img src="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.jpg" alt="Respect Tha Artist album cover" loading="lazy" width="300" height="300">
                                 </picture>
                                 <div class="music-item-overlay">
                                     <button class="play-button" aria-label="Play Respect Tha Artist" data-audio="assets/media/audio/optimized/AvarexNJ - Respect Tha Artist (Clean).mp3">
@@ -2457,7 +2980,7 @@
                                     <a href="https://music.apple.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Apple Music" class="platform-link">
                                         <picture>
                                             <source srcset="assets/media/icons/optimized/Apple_Music_icon.webp" type="image/webp">
-                                            <img src="assets/media/icons/optimized/Apple_Music_icon.png" alt="Apple Music" width="24" height="24" loading="lazy">
+                                            <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24" loading="lazy">
                                         </picture>
                                     </a>
                                     <a href="https://open.spotify.com/album/respect-tha-artist" target="_blank" rel="noopener" aria-label="Listen on Spotify" class="platform-link">
@@ -2489,13 +3012,13 @@
                                 <p class="music-item-year">2024</p>
                                 <div class="music-item-platforms">
                                     <a href="https://music.apple.com/album/ava-iverson-single" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                        <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music">
                                     </a>
                                     <a href="https://open.spotify.com/track/ava-iverson" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                        <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
                                     </a>
                                     <a href="https://music.youtube.com/watch?v=ava-iverson" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                        <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music">
                                     </a>
                                 </div>
                             </div>
@@ -2504,7 +3027,10 @@
                         <!-- Single: Vibe Not Right -->
                         <article class="music-item">
                             <div class="music-item-artwork">
-                                <img src="assets/media/images/Vibe Not Right Single Cover.png" alt="Vibe Not Right single cover" loading="lazy">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Solo Photo.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Solo Photo.jpg" alt="AvarexNJ performing live during Vibe Not Right" loading="lazy">
+                                </picture>
                                 <span class="explicit-badge">E</span>
                                 <button class="play-button" aria-label="Play Vibe Not Right">
                                     <i class="fas fa-play"></i>
@@ -2515,13 +3041,13 @@
                                 <p class="music-item-year">2023</p>
                                 <div class="music-item-platforms">
                                     <a href="https://music.apple.com/album/vibe-not-right" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                        <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music">
                                     </a>
                                     <a href="https://open.spotify.com/track/vibe-not-right" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                        <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
                                     </a>
                                     <a href="https://music.youtube.com/watch?v=vibe-not-right" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                        <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music">
                                     </a>
                                 </div>
                             </div>
@@ -2530,7 +3056,10 @@
                         <!-- Single: Just Watch Him -->
                         <article class="music-item">
                             <div class="music-item-artwork">
-                                <img src="assets/media/images/Just Watch Him Single Cover.png" alt="Just Watch Him single cover" loading="lazy">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Solo Recording Studio Photo2.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Solo Recording Studio Photo2.jpg" alt="AvarexNJ recording Just Watch Him in studio" loading="lazy">
+                                </picture>
                                 <span class="explicit-badge">E</span>
                                 <button class="play-button" aria-label="Play Just Watch Him" data-audio="assets/media/audio/optimized/02. Avarex NJ - Just Watch Him.mp3">
                                     <i class="fas fa-play"></i>
@@ -2541,13 +3070,13 @@
                                 <p class="music-item-year">2023</p>
                                 <div class="music-item-platforms">
                                     <a href="https://music.apple.com/album/just-watch-him" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
-                                        <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music">
+                                        <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music">
                                     </a>
                                     <a href="https://open.spotify.com/track/just-watch-him" target="_blank" rel="noopener" aria-label="Listen on Spotify">
-                                        <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                                        <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
                                     </a>
                                     <a href="https://music.youtube.com/watch?v=just-watch-him" target="_blank" rel="noopener" aria-label="Listen on YouTube Music">
-                                        <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music">
+                                        <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music">
                                     </a>
                                 </div>
                             </div>
@@ -2564,7 +3093,7 @@
 
                 <div class="featured-video">
                     <div class="video-container" data-video-id="FEATURED_VIDEO_ID">
-                        <video class="video-player" controls poster="assets/media/images/Thank Me (Music Video) Screenshot 1.jpg">
+                        <video class="video-player" controls poster="assets/media/images/optimized/full/Thank Me (Music Video) Screenshot 1.jpg">
                     <source src="assets/media/videos/Thank Meee PROMO 3 REEL OUT NOW.mp4" type="video/mp4">
                     Your browser does not support the video element.
                 </video>
@@ -2593,7 +3122,7 @@
                     <!-- Video 1 -->
                     <article class="video-item" data-category="music-videos">
                         <div class="video-thumbnail">
-                            <video class="video-player" controls poster="assets/media/images/Thank Me (Music Video) Screenshot 2.jpg">
+                            <video class="video-player" controls poster="assets/media/images/optimized/full/Thank Me (Music Video) Screenshot 2.jpg">
                         <source src="assets/media/videos/Snapinst.app_video_AQOsMTFaUDZhyW9_xl5tbLBRFXtBtHUncBVoNQlx8BTiqXb4-zV3CroVAaklfta9H7njv2IjMNxoQjHNwBUY5tStXNxGR13JdyvuIck.mp4" type="video/mp4">
                         Your browser does not support the video element.
                     </video>
@@ -2629,7 +3158,7 @@
                     <!-- Video 3 -->
                     <article class="video-item" data-category="freestyles">
                         <div class="video-thumbnail">
-                            <video class="video-player" controls poster="assets/media/images/Video shoot Pics 9 (avanj) copy.jpg">
+                            <video class="video-player" controls poster="assets/media/images/optimized/full/Video shoot Pics 9 (avanj) copy.jpg">
                         <source src="assets/media/videos/Snapinsta.app_video_An82BilIbIClQfBVUhb8LtAJPbLgvwzY9jVL780ZqeuHOoHY2JL_5Ekk99w142K-k1AYGhi7Fhmcwat2DkaAXzXR.mp4" type="video/mp4">
                         Your browser does not support the video element.
                     </video>
@@ -2658,7 +3187,7 @@
                     <div class="playlists-grid">
                         <a href="https://www.youtube.com/playlist?list=avatuesday" class="playlist-item" target="_blank" rel="noopener">
                             <div class="playlist-thumbnail">
-                                <img src="assets/videos/playlists/avatuesday.jpg" alt="AvaTuesday Freestyles playlist thumbnail" loading="lazy" width="240" height="135">
+                                <img src="assets/media/images/optimized/full/Solo Recording Studio Photo.jpg" alt="AvarexNJ in studio during AvaTuesday freestyle series" loading="lazy" width="240" height="135">
                                 <span class="playlist-count">12 videos</span>
                             </div>
                             <h4 class="playlist-title">AvaTuesday Freestyles</h4>
@@ -2666,7 +3195,7 @@
 
                         <a href="https://www.youtube.com/playlist?list=officialvideos" class="playlist-item" target="_blank" rel="noopener">
                             <div class="playlist-thumbnail">
-                                <img src="assets/videos/playlists/music-videos.jpg" alt="Official Music Videos playlist thumbnail" loading="lazy" width="240" height="135">
+                                <img src="assets/media/images/optimized/full/Solo Outside Photo4.jpg" alt="AvarexNJ filming an official music video" loading="lazy" width="240" height="135">
                                 <span class="playlist-count">8 videos</span>
                             </div>
                             <h4 class="playlist-title">Official Music Videos</h4>
@@ -2674,7 +3203,7 @@
 
                         <a href="https://www.youtube.com/playlist?list=interviews" class="playlist-item" target="_blank" rel="noopener">
                             <div class="playlist-thumbnail">
-                                <img src="assets/videos/playlists/interviews.jpg" alt="Interviews & Features playlist thumbnail" loading="lazy" width="240" height="135">
+                                <img src="assets/media/images/optimized/full/Studio Recording Photo3.jpg" alt="AvarexNJ speaking during an interview" loading="lazy" width="240" height="135">
                                 <span class="playlist-count">6 videos</span>
                             </div>
                             <h4 class="playlist-title">Interviews & Features</h4>
@@ -2704,8 +3233,8 @@
                     <div class="carousel-track">
                         <!-- Gallery item 1 -->
                         <figure class="gallery-item" data-category="performances">
-                            <a href="assets/media/images/Solo Outside Photo.JPG" class="gallery-link" data-caption="Live performance at Newark venue, Summer 2024">
-                                <img src="assets/media/images/Solo Outside Photo.JPG" alt="AvarexNJ performing live on stage with microphone" class="gallery-image" width="300" height="200">
+                            <a href="assets/media/images/optimized/full/Solo Outside Photo.jpg" class="gallery-link" data-caption="Live performance at Newark venue, Summer 2024">
+                                <img src="assets/media/images/optimized/full/Solo Outside Photo.jpg" alt="AvarexNJ performing live on stage with microphone" class="gallery-image" width="300" height="200">
                                 <div class="image-overlay">
                                     <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
@@ -2737,8 +3266,8 @@
 
                         <!-- Gallery item 4 -->
                         <figure class="gallery-item" data-category="performances">
-                            <a href="assets/media/images/Solo Outside Photo2.JPG" class="gallery-link" data-caption="Summer Jam performance with special guests">
-                                <img src="assets/media/images/Solo Outside Photo2.JPG" alt="AvarexNJ performing at Summer Jam event" class="gallery-image" width="300" height="200">
+                            <a href="assets/media/images/optimized/full/Solo Outside Photo2.jpg" class="gallery-link" data-caption="Summer Jam performance with special guests">
+                                <img src="assets/media/images/optimized/full/Solo Outside Photo2.jpg" alt="AvarexNJ performing at Summer Jam event" class="gallery-image" width="300" height="200">
                                 <div class="image-overlay">
                                     <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
@@ -2809,7 +3338,7 @@
                             <time datetime="2024-01" class="timeline-date">January 2024</time>
                             <h3 class="milestone-title">Release of "Ava Iverson" Album</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/ava-iverson-release.jpg" alt="Ava Iverson album promotional image" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Ava Iverson Album Cover.jpg" alt="Ava Iverson album cover art" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>Landmark release showcasing AvarexNJ's growth as an artist, featuring collaborations with notable producers and generating significant streaming numbers across platforms.</p>
                                     <a href="#music" class="milestone-link">Listen to the album</a>
@@ -2825,7 +3354,7 @@
                             <time datetime="2023-06" class="timeline-date">June 2023</time>
                             <h3 class="milestone-title">"Respect Tha Artist" Album Launch</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/respect-tha-artist-launch.jpg" alt="Respect Tha Artist album launch event" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.jpg" alt="Respect Tha Artist album artwork" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>Release of the breakthrough album "Respect Tha Artist" featuring AvarexNJ's unique New Jersey-influenced sound, receiving acclaim from fans and critics alike for its authentic representation of East Coast hip-hop.</p>
                                     <a href="#music" class="milestone-link">Explore the album</a>
@@ -2841,7 +3370,7 @@
                             <time datetime="2023-02" class="timeline-date">February 2023</time>
                             <h3 class="milestone-title">"BossMan Time" EP Release</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/bossman-time-release.jpg" alt="BossMan Time EP release promotional image" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Solo Drinking Cup Photo.jpg" alt="AvarexNJ performing during BossMan Time era" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>The "BossMan Time" EP demonstrated AvarexNJ's versatility and production skills, featuring collaborations with notable East Coast producers and establishing his distinctive style.</p>
                                     <a href="#music" class="milestone-link">Listen to the EP</a>
@@ -2857,7 +3386,7 @@
                             <time datetime="2022-09" class="timeline-date">September 2022</time>
                             <h3 class="milestone-title">Launch of AvaTuesday Freestyle Series</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/avatuesday-launch.jpg" alt="AvaTuesday freestyle series launch" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Video shoot Pics 9 (avanj) copy.jpg" alt="Behind the scenes of the AvaTuesday freestyle series" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>Creation of the weekly "AvaTuesday" freestyle series, showcasing AvarexNJ's lyrical abilities and building a dedicated following through consistent content delivery on YouTube.</p>
                                     <a href="#videos" class="milestone-link">Watch the series</a>
@@ -2873,7 +3402,7 @@
                             <time datetime="2022-04" class="timeline-date">April 2022</time>
                             <h3 class="milestone-title">"Future Millionaire" Album Release</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/future-millionaire-release.jpg" alt="Future Millionaire album release" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Solo Easton Photo.jpg" alt="AvarexNJ promoting Future Millionaire album" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>AvarexNJ's "Future Millionaire" album showcased his growth as an artist and entrepreneur, focusing on themes of ambition and perseverance while representing New Jersey's unique hip-hop culture.</p>
                                     <a href="#music" class="milestone-link">Explore the album</a>
@@ -2889,7 +3418,7 @@
                             <time datetime="2021-10" class="timeline-date">October 2021</time>
                             <h3 class="milestone-title">Debut Album "Student 2 The Game"</h3>
                             <div class="milestone-details">
-                                <img src="assets/portfolio/student-2-the-game-release.jpg" alt="Student 2 The Game debut album release" width="200" height="200">
+                                <img src="assets/media/images/optimized/full/Solo Easton Photo2.jpg" alt="AvarexNJ during Student 2 The Game era" width="200" height="200">
                                 <div class="milestone-description">
                                     <p>AvarexNJ's debut album "Student 2 The Game" introduced his unique voice to the hip-hop landscape, establishing his New Jersey roots and commitment to authentic storytelling.</p>
                                     <a href="#music" class="milestone-link">Listen to the debut</a>
@@ -2938,18 +3467,10 @@
                 <div class="press-section">
                     <h3 class="press-heading">Media Coverage</h3>
                     <div class="press-logos">
-                        <div class="press-logo">
-                            <img src="assets/press/hot97-logo.png" alt="Hot 97 logo" width="120" height="60">
-                        </div>
-                        <div class="press-logo">
-                            <img src="assets/press/complex-logo.png" alt="Complex logo" width="120" height="60">
-                        </div>
-                        <div class="press-logo">
-                            <img src="assets/press/nj-com-logo.png" alt="NJ.com logo" width="120" height="60">
-                        </div>
-                        <div class="press-logo">
-                            <img src="assets/press/power105-logo.png" alt="Power 105.1 logo" width="120" height="60">
-                        </div>
+                        <div class="press-logo" aria-label="Hot 97">Hot 97</div>
+                        <div class="press-logo" aria-label="Complex">Complex</div>
+                        <div class="press-logo" aria-label="NJ.com">NJ.com</div>
+                        <div class="press-logo" aria-label="Power 105.1">Power 105.1</div>
                     </div>
 
                     <div class="press-quote">
@@ -3151,7 +3672,7 @@
             <div class="footer-content">
                 <div class="footer-branding">
                     <a href="#home" class="footer-logo">
-                        <img src="assets/images/avarexnj-logo-white.png" alt="AvarexNJ Logo" width="200" height="60">
+                        <img src="assets/media/icons/optimized/AVAREXNJ Logo desgin.png" alt="AvarexNJ Logo" width="200" height="60">
                     </a>
                     <p class="footer-tagline">New Jersey Rap Artist</p>
                     <p class="footer-copyright">&copy; 2025 AvarexNJ. All rights reserved.</p>
@@ -3173,13 +3694,13 @@
                     <h4 class="footer-heading">Stream Music</h4>
                     <div class="footer-streaming">
                         <a href="https://music.apple.com/artist/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
-                            <img src="assets/media/icons/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24"> Apple Music
+                            <img src="assets/media/icons/optimized/Apple_Music_icon.svg.png" alt="Apple Music" width="24" height="24"> Apple Music
                         </a>
                         <a href="https://open.spotify.com/artist/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
-                            <img src="assets/media/icons/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24"> Spotify
+                            <img src="assets/media/icons/optimized/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify" width="24" height="24"> Spotify
                         </a>
                         <a href="https://music.youtube.com/artist/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
-                            <img src="assets/media/icons/Youtube logo.jpg" alt="YouTube Music" width="24" height="24"> YouTube Music
+                            <img src="assets/media/icons/optimized/Youtube logo.png" alt="YouTube Music" width="24" height="24"> YouTube Music
                         </a>
                         <a href="https://soundcloud.com/avarexnj" class="footer-stream-link" target="_blank" rel="noopener">
                             <i class="fab fa-soundcloud"></i> SoundCloud
@@ -3618,6 +4139,362 @@
 
             // Initialize carousel
             updateCarousel();
+
+            // ===============================================
+            // MORPHING SKETCH-TO-TEXT HERO ANIMATION CONTROLS
+            // ===============================================
+
+            // Animation state management
+            let animationState = {
+                isPlaying: false,
+                isPaused: false,
+                currentPhase: 'emergence', // emergence, morphing, formation, stabilization
+                animationStartTime: null,
+                totalDuration: 10000 // 10 seconds total
+            };
+
+            // Check for reduced motion preference
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            // Hero animation elements
+            const heroSection = document.querySelector('.hero-section');
+            const sketchContainer = document.querySelector('.sketch-container');
+            const morphingText = document.querySelector('.morphing-text');
+            const heroSubtitle = document.querySelector('.morphing-subtitle');
+            const heroButtons = document.querySelectorAll('.hero-cta');
+
+            // Animation control functions
+            function startHeroAnimation() {
+                if (prefersReducedMotion) return;
+
+                animationState.isPlaying = true;
+                animationState.animationStartTime = Date.now();
+                animationState.isPaused = false;
+
+                // Add playing class to enable animations
+                heroSection.classList.add('animation-playing');
+
+                // Update current phase based on elapsed time
+                updateAnimationPhase();
+            }
+
+            function pauseHeroAnimation() {
+                if (!animationState.isPlaying) return;
+
+                animationState.isPaused = true;
+                heroSection.classList.add('animation-paused');
+
+                // Pause all CSS animations
+                const animatedElements = document.querySelectorAll('.sketch-line, .particle, .morphing-text, .text-char, .morphing-subtitle, .hero-cta');
+                animatedElements.forEach(el => {
+                    el.style.animationPlayState = 'paused';
+                });
+            }
+
+            function resumeHeroAnimation() {
+                if (!animationState.isPaused) return;
+
+                animationState.isPaused = false;
+                heroSection.classList.remove('animation-paused');
+
+                // Resume all CSS animations
+                const animatedElements = document.querySelectorAll('.sketch-line, .particle, .morphing-text, .text-char, .morphing-subtitle, .hero-cta');
+                animatedElements.forEach(el => {
+                    el.style.animationPlayState = 'running';
+                });
+            }
+
+            function restartHeroAnimation() {
+                // Reset all animation states
+                heroSection.classList.remove('animation-playing', 'animation-paused');
+
+                // Force reflow to restart animations
+                void heroSection.offsetWidth;
+
+                // Start animation again
+                setTimeout(startHeroAnimation, 100);
+            }
+
+            function updateAnimationPhase() {
+                if (!animationState.isPlaying || animationState.isPaused) return;
+
+                const elapsed = Date.now() - animationState.animationStartTime;
+
+                if (elapsed < 2000) {
+                    animationState.currentPhase = 'emergence';
+                } else if (elapsed < 4000) {
+                    animationState.currentPhase = 'morphing';
+                } else if (elapsed < 6000) {
+                    animationState.currentPhase = 'formation';
+                } else {
+                    animationState.currentPhase = 'stabilization';
+                }
+
+                // Update ARIA live region for screen readers
+                updateAriaStatus();
+
+                // Continue updating phase
+                if (elapsed < animationState.totalDuration) {
+                    requestAnimationFrame(updateAnimationPhase);
+                } else {
+                    animationState.isPlaying = false;
+                }
+            }
+
+            function updateAriaStatus() {
+                const statusElement = document.getElementById('animation-status');
+                if (statusElement) {
+                    statusElement.textContent = `Animation phase: ${animationState.currentPhase}`;
+                }
+            }
+
+            // Hover interactions
+            function setupHoverInteractions() {
+                // Enhanced glow on hover
+                heroSection.addEventListener('mouseenter', () => {
+                    if (animationState.currentPhase === 'stabilization') {
+                        morphingText.style.textShadow = '0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(217, 33, 34, 0.4)';
+                    }
+                });
+
+                heroSection.addEventListener('mouseleave', () => {
+                    if (animationState.currentPhase === 'stabilization') {
+                        morphingText.style.textShadow = '0 0 10px rgba(255, 255, 255, 0.3)';
+                    }
+                });
+
+                // Micro-morph effect on text hover
+                morphingText.addEventListener('mouseenter', () => {
+                    if (!prefersReducedMotion && animationState.currentPhase === 'stabilization') {
+                        morphingText.style.transform = 'scale(1.02)';
+                        morphingText.style.filter = 'blur(0.5px)';
+
+                        setTimeout(() => {
+                            morphingText.style.transform = 'scale(1)';
+                            morphingText.style.filter = 'blur(0)';
+                        }, 300);
+                    }
+                });
+            }
+
+            // Click/Scroll interactions
+            function setupClickInteractions() {
+                // Click on hero to pause/resume
+                heroSection.addEventListener('click', (e) => {
+                    // Don't trigger if clicking on buttons or links
+                    if (e.target.closest('a') || e.target.closest('button')) return;
+
+                    if (animationState.isPaused) {
+                        resumeHeroAnimation();
+                    } else if (animationState.isPlaying) {
+                        pauseHeroAnimation();
+                    }
+                });
+
+                // Spacebar to pause/resume
+                document.addEventListener('keydown', (e) => {
+                    if (e.code === 'Space' && e.target === document.body) {
+                        e.preventDefault();
+                        if (animationState.isPaused) {
+                            resumeHeroAnimation();
+                        } else if (animationState.isPlaying) {
+                            pauseHeroAnimation();
+                        }
+                    }
+                });
+
+                // R key to restart animation
+                document.addEventListener('keydown', (e) => {
+                    if (e.code === 'KeyR' && e.target === document.body) {
+                        e.preventDefault();
+                        restartHeroAnimation();
+                    }
+                });
+            }
+
+            // Scroll-based interaction
+            function setupScrollInteractions() {
+                let lastScrollY = window.scrollY;
+
+                window.addEventListener('scroll', () => {
+                    const currentScrollY = window.scrollY;
+                    const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+
+                    // Pause animation when scrolling down, resume when scrolling up
+                    if (scrollDirection === 'down' && animationState.isPlaying && !animationState.isPaused) {
+                        pauseHeroAnimation();
+                    } else if (scrollDirection === 'up' && animationState.isPaused) {
+                        resumeHeroAnimation();
+                    }
+
+                    lastScrollY = currentScrollY;
+                }, {
+                    passive: true
+                });
+            }
+
+            // Accessibility features
+            function setupAccessibility() {
+                // Create ARIA live region for animation status
+                const statusElement = document.createElement('div');
+                statusElement.id = 'animation-status';
+                statusElement.setAttribute('aria-live', 'polite');
+                statusElement.setAttribute('aria-atomic', 'true');
+                statusElement.className = 'sr-only';
+                document.body.appendChild(statusElement);
+
+                // Keyboard navigation hints (announced to screen readers)
+                const keyboardHints = document.createElement('div');
+                keyboardHints.id = 'animation-hints';
+                keyboardHints.setAttribute('aria-label', 'Hero animation controls');
+                keyboardHints.innerHTML = `
+                    <div class="sr-only">
+                        Hero animation keyboard controls:
+                        Space bar - pause/resume animation
+                        R key - restart animation
+                        Animation automatically respects reduced motion preferences
+                    </div>
+                `;
+                heroSection.appendChild(keyboardHints);
+
+                // Focus management
+                heroSection.addEventListener('focusin', () => {
+                    if (animationState.currentPhase === 'stabilization') {
+                        morphingText.style.outline = '2px solid var(--color-accent)';
+                    }
+                });
+
+                heroSection.addEventListener('focusout', () => {
+                    morphingText.style.outline = 'none';
+                });
+            }
+
+            // Performance optimizations and mobile support
+            function setupPerformanceOptimizations() {
+                // Detect mobile devices
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+
+                // Use Intersection Observer to only animate when visible
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '50px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !animationState.isPlaying && !prefersReducedMotion) {
+                            startHeroAnimation();
+                        } else if (!entry.isIntersecting && animationState.isPlaying) {
+                            pauseHeroAnimation();
+                        }
+                    });
+                }, observerOptions);
+
+                observer.observe(heroSection);
+
+                // Throttle animation updates for better performance
+                let animationThrottle = null;
+
+                function throttledUpdate() {
+                    if (!animationThrottle) {
+                        animationThrottle = requestAnimationFrame(() => {
+                            updateAnimationPhase();
+                            animationThrottle = null;
+                        });
+                    }
+                }
+
+                // Mobile-specific optimizations
+                if (isMobile) {
+                    // Reduce animation complexity on mobile
+                    document.documentElement.style.setProperty('--animation-duration-multiplier', '0.8');
+
+                    // Disable particles on low-end mobile devices
+                    if (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2) {
+                        const particles = document.querySelector('.morph-particles');
+                        if (particles) {
+                            particles.style.display = 'none';
+                        }
+                    }
+
+                    // Add touch interaction support
+                    setupTouchInteractions();
+                }
+
+                // Battery-aware animation (if supported)
+                if ('getBattery' in navigator) {
+                    navigator.getBattery().then(battery => {
+                        if (battery.level < 0.2 && !battery.charging) {
+                            // Reduce animation intensity on low battery
+                            heroSection.classList.add('low-power-mode');
+                        }
+                    });
+                }
+            }
+
+            // Touch interactions for mobile
+            function setupTouchInteractions() {
+                let touchStartY = 0;
+                let touchStartTime = 0;
+
+                // Touch start
+                heroSection.addEventListener('touchstart', (e) => {
+                    touchStartY = e.touches[0].clientY;
+                    touchStartTime = Date.now();
+                }, {
+                    passive: true
+                });
+
+                // Touch end - detect tap vs swipe
+                heroSection.addEventListener('touchend', (e) => {
+                    const touchEndY = e.changedTouches[0].clientY;
+                    const touchDuration = Date.now() - touchStartTime;
+                    const touchDistance = Math.abs(touchEndY - touchStartY);
+
+                    // If it's a quick tap (not a scroll), toggle animation
+                    if (touchDuration < 300 && touchDistance < 10) {
+                        e.preventDefault();
+                        if (animationState.isPaused) {
+                            resumeHeroAnimation();
+                        } else if (animationState.isPlaying) {
+                            pauseHeroAnimation();
+                        }
+                    }
+                });
+
+                // Prevent default touch behaviors that might interfere
+                heroSection.addEventListener('touchmove', (e) => {
+                    // Allow normal scrolling but prevent multi-touch gestures
+                    if (e.touches.length > 1) {
+                        e.preventDefault();
+                    }
+                }, {
+                    passive: false
+                });
+            }
+
+            // Initialize all hero animation features
+            function initHeroAnimation() {
+                if (prefersReducedMotion) {
+                    // For reduced motion, just show final state immediately
+                    heroSection.classList.add('reduced-motion');
+                    return;
+                }
+
+                setupAccessibility();
+                setupHoverInteractions();
+                setupClickInteractions();
+                setupScrollInteractions();
+                setupPerformanceOptimizations();
+
+                // Start animation when page loads if hero is visible
+                if (heroSection.getBoundingClientRect().top < window.innerHeight) {
+                    setTimeout(startHeroAnimation, 500); // Small delay to ensure DOM is ready
+                }
+            }
+
+            // Initialize hero animation
+            initHeroAnimation();
         });
     </script>
 </body>
