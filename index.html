@@ -536,31 +536,35 @@
         
         .morphing-text-container {
             position: absolute;
-            top: 50%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 3;
             opacity: 0;
             animation: text-formation 2s ease-in-out 4s forwards;
+            width: 100%;
+            text-align: center;
         }
-        
+
         .morphing-text {
             font-size: 3rem;
             font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 0.15em;
             margin: 0;
             position: relative;
             opacity: 0;
             transform: scale(0.8);
             animation: text-solidify 2s ease-in-out 4s forwards, text-pulse 4s ease-in-out 6s infinite;
+            white-space: nowrap;
         }
-        
+
         .text-char {
             display: inline-block;
             opacity: 0;
             transform: translateY(20px) rotateX(90deg);
             transition: all 0.3s ease;
+            margin: 0 0.02em;
         }
         /* Staggered character reveal */
         
@@ -842,12 +846,35 @@
             .morphing-text {
                 font-size: 4rem;
             }
+            .hero-content {
+                margin-top: 10rem;
+            }
         }
-        
+
         @media (min-width: 992px) {
             .morphing-text {
                 font-size: 5rem;
-                letter-spacing: 3px;
+                letter-spacing: 0.2em;
+            }
+            .hero-content {
+                margin-top: 12rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .morphing-text {
+                font-size: 2.5rem;
+                letter-spacing: 0.1em;
+            }
+            .morphing-text-container {
+                top: 30%;
+            }
+            .hero-content {
+                margin-top: 6rem;
+                padding: var(--spacing-medium);
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
             }
         }
         
@@ -867,6 +894,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: var(--spacing-large);
+            margin-top: 8rem;
         }
         
         .hero-title {
