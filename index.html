@@ -75,13 +75,25 @@
     <!-- CSS Styling -->
     <style>
         /* CSS Reset/Normalize */
-        
+
         *,
         *::before,
         *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        /* Smooth scrolling for the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Respect user's motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
         }
         /* Base Variables */
         
@@ -2918,7 +2930,10 @@
 
                     <!-- News Item 2 -->
                     <article class="news-card">
-                        <img src="assets/media/images/Solo Recording Studio Photo.jpg" alt="Ava Iverson album release party" class="news-image">
+                        <picture>
+                            <source srcset="assets/media/images/optimized/full/Solo Recording Studio Photo.webp" type="image/webp">
+                            <img src="assets/media/images/optimized/full/Solo Recording Studio Photo.jpg" alt="Ava Iverson album release party" class="news-image">
+                        </picture>
                         <div class="news-content">
                             <time datetime="2025-02-10" class="news-date">February 10, 2025</time>
                             <h3 class="news-title">Album Release Success</h3>
@@ -2929,7 +2944,10 @@
 
                     <!-- News Item 3 -->
                     <article class="news-card">
-                        <img src="assets/media/images/Studio Recording Photo.jpg" alt="AvarexNJ during radio interview" class="news-image">
+                        <picture>
+                            <source srcset="assets/media/images/optimized/full/Studio Recording Photo.webp" type="image/webp">
+                            <img src="assets/media/images/optimized/full/Studio Recording Photo.jpg" alt="AvarexNJ during radio interview" class="news-image">
+                        </picture>
                         <div class="news-content">
                             <time datetime="2025-01-25" class="news-date">January 25, 2025</time>
                             <h3 class="news-title">Hot 97 Interview</h3>
@@ -3030,7 +3048,10 @@
                         <!-- Single: Ava Iverson -->
                         <article class="music-item">
                             <div class="music-item-artwork">
-                                <img src="assets/media/images/Ava Iverson Single Cover.png" alt="Ava Iverson single cover" loading="lazy">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Ava Iverson Single Cover.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Ava Iverson Single Cover.jpg" alt="Ava Iverson single cover" loading="lazy">
+                                </picture>
                                 <span class="explicit-badge">E</span>
                                 <button class="play-button" aria-label="Play Ava Iverson single">
                                     <i class="fas fa-play"></i>
@@ -3169,7 +3190,7 @@
                     <!-- Video 2 -->
                     <article class="video-item" data-category="interviews">
                         <div class="video-thumbnail">
-                            <video class="video-player" controls poster="assets/media/images/Studio Recording Photo3.jpg">
+                            <video class="video-player" controls poster="assets/media/images/optimized/full/Studio Recording Photo3.jpg">
                         <source src="assets/media/videos/Snapinst.app_video_AQPAph4N10ZvgPkPbRtiN1I4AoJnh2bjht8WK_G1ip5earwlRx7zK5N15ZdQNoPVW4m0srNo-RlK9ovY-9nMmKmyFWdVJTVGUKpqJpQ.mp4" type="video/mp4">
                         Your browser does not support the video element.
                     </video>
@@ -3273,8 +3294,11 @@
 
                         <!-- Gallery item 2 -->
                         <figure class="gallery-item" data-category="studio">
-                            <a href="assets/media/images/Solo Recording Studio Photo.jpg" class="gallery-link" data-caption="Recording session for Ava Iverson album">
-                                <img src="assets/media/images/Solo Recording Studio Photo.jpg" alt="AvarexNJ in recording studio with headphones" class="gallery-image" width="300" height="200">
+                            <a href="assets/media/images/optimized/full/Solo Recording Studio Photo.jpg" class="gallery-link" data-caption="Recording session for Ava Iverson album">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Solo Recording Studio Photo.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Solo Recording Studio Photo.jpg" alt="AvarexNJ in recording studio with headphones" class="gallery-image" width="300" height="200">
+                                </picture>
                                 <div class="image-overlay">
                                     <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
@@ -3284,8 +3308,11 @@
 
                         <!-- Gallery item 3 -->
                         <figure class="gallery-item" data-category="promo">
-                            <a href="assets/media/images/Ava Iverson Album Cover.png" class="gallery-link" data-caption="Album promo photoshoot, Respect Tha Artist">
-                                <img src="assets/media/images/Ava Iverson Album Cover.png" alt="AvarexNJ promotional photoshoot with graffiti background" class="gallery-image" width="300" height="200">
+                            <a href="assets/media/images/optimized/full/Ava Iverson Album Cover.jpg" class="gallery-link" data-caption="Album promo photoshoot, Respect Tha Artist">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Ava Iverson Album Cover.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Ava Iverson Album Cover.jpg" alt="AvarexNJ promotional photoshoot with graffiti background" class="gallery-image" width="300" height="200">
+                                </picture>
                                 <div class="image-overlay">
                                     <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
@@ -3306,8 +3333,11 @@
 
                         <!-- Gallery item 5 -->
                         <figure class="gallery-item" data-category="promo">
-                            <a href="assets/media/images/Respect the Hustle Albulm Cover.jpg" class="gallery-link" data-caption="BossMan Time album promotional shoot">
-                                <img src="assets/media/images/Respect the Hustle Albulm Cover.jpg" alt="AvarexNJ in formal attire for BossMan Time album" class="gallery-image" width="300" height="200">
+                            <a href="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.jpg" class="gallery-link" data-caption="BossMan Time album promotional shoot">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Respect the Hustle Albulm Cover.jpg" alt="AvarexNJ in formal attire for BossMan Time album" class="gallery-image" width="300" height="200">
+                                </picture>
                                 <div class="image-overlay">
                                     <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
@@ -3317,8 +3347,11 @@
 
                         <!-- Gallery item 6 -->
                         <figure class="gallery-item" data-category="studio">
-                            <a href="assets/media/images/Studio Recording Photo2.jpg" class="gallery-link" data-caption="Working with producers on new tracks">
-                                <img src="assets/media/images/Studio Recording Photo2.jpg" alt="AvarexNJ working with producers in studio" class="gallery-image" width="300" height="200">
+                            <a href="assets/media/images/optimized/full/Studio Recording Photo2.jpg" class="gallery-link" data-caption="Working with producers on new tracks">
+                                <picture>
+                                    <source srcset="assets/media/images/optimized/full/Studio Recording Photo2.webp" type="image/webp">
+                                    <img src="assets/media/images/optimized/full/Studio Recording Photo2.jpg" alt="AvarexNJ working with producers in studio" class="gallery-image" width="300" height="200">
+                                </picture>
                                 <div class="image-overlay">
                                     <span class="overlay-icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
